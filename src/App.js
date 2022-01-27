@@ -1,7 +1,7 @@
 import React from "react";
 // components and containers
 import { Navbar } from "./components";
-import { FeatureHeader } from "./containers";
+import { FeatureHeader, Service, Statistics} from "./containers";
 //css
 import './app.css';
 const App = () => {
@@ -9,6 +9,8 @@ const App = () => {
     <>
       <Navbar />
       <FeatureHeader />
+      <Service/>
+    <Statistics/>
     </>
   );
 };

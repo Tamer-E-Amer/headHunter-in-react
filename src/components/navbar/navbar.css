@@ -51,6 +51,7 @@
   padding: 0 2rem;
   display: flex;
   position: relative;
+  width: 100%;
 }
 
 /* logo */
@@ -145,6 +146,7 @@
   right: 0;
   width: 100%;
   padding: 0 0.5rem;
+  background-color: #fff;
 }
 
 .alps-east__navbar__menu li {

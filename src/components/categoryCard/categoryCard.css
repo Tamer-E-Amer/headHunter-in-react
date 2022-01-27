@@ -1,0 +1,56 @@
+/* job category card styling */
+.number,
+.count-for-what {
+  display: inline-block;
+  text-align: right;
+}
+.number {
+  color: var(--red-color);
+  font-weight: 700;
+  font-size: 2.5rem;
+  width: 90px;
+  margin-right: 0.5rem;
+}
+.count-for-what {
+  width: 150px;
+  text-align: left;
+  font-weight: 500;
+  padding-left: 0.5rem;
+}
+
+.alps-east__service__category-card {
+  flex-direction: column;
+  width: 350px;
+  height: 258px;
+  border: var(--card-border);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.alps-east__service__category-card:hover {
+  background-color: #ddd;
+  transform: scale(103%);
+}
+.alps-east__service__category-card__title {
+  font-size: 1.7rem;
+  color: var(--dark-gray);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.alps-east__service__category-card__position-count,
+.alps-east__service__category-card__company-count {
+  width: 95%;
+  text-align: center;
+  /* margin: 0.5rem 0; */
+}
+
+@media (max-width: 900px) {
+  .alps-east__service__category-card {
+    width: 280px;
+  }
+}
+@media (max-width: 500px) {
+  .alps-east__service__category-card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,29 @@
+/* statistics box styling */
+.alps-east__statistics_statistics-box {
+  width: 340px;
+  height: 235px;
+  background-color: var(--med-gray);
+  margin: 1rem;
+}
+
+.alps-east__statistics_statistics-box {
+  flex-direction: column;
+}
+.alps-east__statistics_statistics-box__count,
+.alps-east__statistics_statistics-box__count-of {
+  width: 70%;
+  font-size: 6.25rem;
+  text-align: center;
+}
+.alps-east__statistics_statistics-box__count-of {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 700px) {
+  .alps-east__statistics_statistics-box__count {
+    font-size: 4.25rem;
+  }
+  .alps-east__statistics_statistics-box__count-of {
+    font-size: 2.25rem;
+  }
+}

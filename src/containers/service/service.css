@@ -1,0 +1,56 @@
+/* service section styling */
+
+.alps-east__service {
+  height: auto;
+  background-color: #eee;
+  padding: 2rem 4rem;
+}
+.alps-east__service strong {
+  color: var(--red-color);
+}
+
+.alps-east__service__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.alps-east__service__header-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--med-gray);
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* job category list */
+.alps-east__service__category-card-list {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+/* media query */
+
+@media (max-width: 900px) {
+  .alps-east__service__category-card-list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .alps-east__user-type-container {
+    flex-wrap: wrap;
+  }
+  .alps-east__service {
+    padding: 1rem;
+  }
+  .alps-east__service__header-text {
+    font-size: 1rem;
+  }
+}

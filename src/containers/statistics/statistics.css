@@ -1,0 +1,15 @@
+/* ststistics container styling */
+.alps-east__statistics {
+  padding: 1rem 5rem;
+  min-height: 350px;
+  width: 100%;
+  background-color: var(--dark-gray);
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  .alps-east__statistics {
+    padding: 1rem;
+  }
+}

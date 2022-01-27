@@ -5,7 +5,7 @@
   --med-gray: #554a4a;
   --dark-gray: #2d2626;
   --inpu-border: 1px solid #707070;
-  --card-border: 1px solid #9f9a9a;
+  --card-border: 1px solid rgba(159, 154, 154, 0.6);
 }
 
 /* general rules */
@@ -15,7 +15,7 @@
   box-sizing: border-box;
   outline: none;
   border: none;
-  /* transition: all 0.3s ease-in-out; */
+  transition: all 0.3s ease-in-out;
 }
 
 body {

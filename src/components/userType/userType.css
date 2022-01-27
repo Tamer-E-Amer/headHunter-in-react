@@ -1,0 +1,55 @@
+/* user type component style */
+.alps-east__service__user-type {
+  flex-direction: column;
+  padding: 2rem;
+  width: 579px;
+  height: 285px;
+  background-color: var(--red-color);
+  margin: 2rem;
+}
+
+.alps-east__service__user-type__text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #fff;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+/* login button for candidate */
+.alps-east__service__login-button {
+  width: 167px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.alps-east__service__login-button:hover {
+  transform: scaleX(103%);
+}
+
+.alps-east__service__user-type a {
+  color: #feed00;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .alps-east__service__user-type {
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 0.75rem;
+    height: auto;
+  }
+  .alps-east__service__login-button {
+    width: 140px;
+  }
+}
+@media (max-width: 500px) {
+  .alps-east__service__user-type__button-container {
+    flex-direction: column;
+  }
+  .alps-east__service__login-button {
+    margin-bottom: 0.5rem;
+  }
+}
