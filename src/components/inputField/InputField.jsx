@@ -6,13 +6,14 @@
  * @param {string} htmlFor : for the lable of the input field
  * @param {string} labelText : accept the text of the input field label
  * @param {string} className : the calssname of the input field to adjust its styling
+ * @param {string} placeHolder : the placeHolder of the input field
  */
 import React from "react";
 //css
 import "./inputField.css";
 const InputField = (props) => {
   return (
-    <div>
+    <div className="alps-east__input-field-row">
       <label htmlFor={props.htmlFor} className="alps-east__input-field-label">
         {props.labelText}
       </label>
@@ -21,6 +22,7 @@ const InputField = (props) => {
         name={props.name}
         id={props.id}
         className={`alps-east__input-field ${props.className}`}
+        placeholder={props.placeHolder}
       />
     </div>
   );
