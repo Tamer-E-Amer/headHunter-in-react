@@ -1,0 +1,19 @@
+/* red Button styling */
+
+.alps-east__red-button {
+  grid-column: 1/3;
+  align-self: center;
+  justify-self: center;
+  width: 165px;
+  height: 62px;
+  color: #fff;
+  margin-top: 0.5rem;
+  background-color: var(--red-color);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.alps-east__red-button:hover {
+  transform: scale(103%);
+}

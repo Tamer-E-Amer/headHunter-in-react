@@ -29,6 +29,7 @@
 .alps-east__service__category-card:hover {
   background-color: #ddd;
   transform: scale(103%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 .alps-east__service__category-card__title {
   font-size: 1.7rem;

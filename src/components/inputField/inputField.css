@@ -1,0 +1,16 @@
+/* input field styling */
+.alps-east__input-field {
+  width: 95%;
+  height: 62px;
+  border: 1px solid var(--input-border);
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.75rem 1rem 0.75rem 0;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+  color: var(--med-gray);
+}
+.alps-east__input-field-label {
+  color: #fff;
+}

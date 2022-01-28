@@ -1,0 +1,49 @@
+/* about us container styling */
+.alps-east__about-us {
+  height: auto;
+  padding: 2rem 4rem;
+}
+
+.alps-east__about-us__header {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+  text-align: center;
+  margin: 0 0 1rem;
+}
+.alps-east__about-us__about-data-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 652px;
+}
+
+.alps-east__about-us__about-data-container__text {
+  width: 70%;
+  padding: 1rem 3rem;
+  min-height: 652px;
+}
+.alps-east__about-us__about-data-container__text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+  color: var(--dark-gray);
+  width: 100%;
+}
+.alps-east__about-us__about-data-container__text p:first-of-type {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .alps-east__about-us__about-data-container {
+    flex-direction: column;
+  }
+  .alps-east__about-us__about-data-container__ceo {
+    width: 100%;
+  }
+  .alps-east__about-us__about-data-container__text {
+    width: 100%;
+    padding: 1rem;
+  }
+}
