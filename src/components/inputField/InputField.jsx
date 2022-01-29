@@ -1,12 +1,12 @@
 /**
  * @description this is a component for reusable input field and accept the following parameters as props
- * @param {string} type : accept the type of the input field
- * @param {string} name : accept the name of the input field
- * @param {string} id : accept the ID of the input field
- * @param {string} htmlFor : for the lable of the input field
- * @param {string} labelText : accept the text of the input field label
- * @param {string} className : the calssname of the input field to adjust its styling
- * @param {string} placeHolder : the placeHolder of the input field
+ * @param {string}    type        : accept the type of the input field
+ * @param {string}    name        : accept the name of the input field
+ * @param {string}    id          : accept the ID of the input field
+ * @param {string}    htmlFor     : for the lable of the input field
+ * @param {string}    labelText   : accept the text of the input field label
+ * @param {string}    className   : the calssname of the input field to adjust its styling
+ * @param {string}    placeHolder : the placeHolder of the input field
  */
 import React from "react";
 //css
@@ -20,9 +20,11 @@ const InputField = (props) => {
       <input
         type={props.type}
         name={props.name}
+        value={props.value}
         id={props.id}
         className={`alps-east__input-field ${props.className}`}
         placeholder={props.placeHolder}
+        onChange={props.onChange}
       />
     </div>
   );

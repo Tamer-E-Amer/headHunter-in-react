@@ -87,7 +87,59 @@ const homePageDate ={
             "p":"Alps.east will connect these qualified Youth and the large companies in these countries. we want also to say, we will your agent here. do not wory about some certain procedures that you should follow in order to have the Visa, renting an apartment and so on."
 
         },
-    ]
+    ],
+    "footer":{
+        "navigation":[
+            {
+                "id":1,
+                "linkName":"Home",
+                "url":"/",
+            },
+            {
+                "id":2,
+                "linkName":"Service",
+                "url":"#service",
+            },
+            {
+                "id":3,
+                "linkName":"About",
+                "url":"#about",
+            },
+            {
+                "id":4,
+                "linkName":"Contact Us",
+                "url":"contact Us",
+            },
+        ],
+        "externalLinks":[
+            {
+                "id":1,
+                "linkName":"External link 1",
+                "url":"#",
+            },
+            {
+                "id":2,
+                "linkName":"External link 2",
+                "url":"#",
+            },
+            {
+                "id":3,
+                "linkName":"External link 3",
+                "url":"#",
+            },
+            {
+                "id":4,
+                "linkName":"External link 4",
+                "url":"#",
+            },
+            {
+                "id":5,
+                "linkName":"External link 5",
+                "url":"#",
+            },
+        ],
+        "copyrights":"Copy Rights are reserved 2022 - Tamer Amer"
+    }
     
     
 }
