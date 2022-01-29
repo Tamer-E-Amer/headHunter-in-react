@@ -6,6 +6,11 @@
   height: 285px;
   background-color: var(--red-color);
   margin: 2rem;
+  border-radius: 5px;
+}
+/* for candidate component */
+.alps-east__service__user-type-candidate {
+  background-color: var(--med-gray);
 }
 
 .alps-east__service__user-type__text {

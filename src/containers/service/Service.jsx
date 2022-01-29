@@ -2,7 +2,15 @@ import React from "react";
 import { UserType, CategoryCard } from "../../components";
 //css
 import "./service.css";
+//service section data
+import serviceData from "../../data/homePage";
+
 const Service = () => {
+  // mapping through service data to extrct userType components
+  const userTypes = serviceData.service.userTypes.map((userType) => {
+    return <UserType key={userType.id} data={userType} />;
+  });
+
   return (
     <div className="alps-east__service">
       <h1 className="alps-east__service__title">Service</h1>
@@ -14,8 +22,9 @@ const Service = () => {
         or a <strong>candidate</strong>.
       </p>
       <div className="alps-east__user-type-container center">
-        <UserType />
-        <UserType />
+        {/* <UserType />
+        <UserType /> */}
+        {userTypes}
       </div>
       <p className="alps-east__service__header-text">
         You can find more than 600 job position for more than 40 companies in
