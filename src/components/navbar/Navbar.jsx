@@ -31,6 +31,7 @@ const Navbar = () => {
         >
           <FaHome />
         </IconContext.Provider>
+        {/* In order to Hide the name of the link in the Middle screen we need to check the value of the scrren is less than 700px and greater than 500 px */}
         {(props.windowSize > 700 || props.windowSize <= 500) && "Home"}
       </li>
       <li className="center">

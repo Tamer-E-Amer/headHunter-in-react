@@ -1,6 +1,12 @@
+/**
+ * @description this is UserType component which is placed in the service section in the homepage. it show the type of the user of the page wheather it is a candidate or an employer
+ * it accept props of the following properties
+ * @param {integer} id              : id of the user type
+ * @param {string}  type            : type of the user (candidate or employer)
+ * @param {svg}     Icon            : Icon of the component
+ * @param {string}  backgroundColor : background of the component
+ */
 import React from "react";
-// icon
-//import { MdBusinessCenter } from "react-icons/md";
 //css
 import "./userType.css";
 //data

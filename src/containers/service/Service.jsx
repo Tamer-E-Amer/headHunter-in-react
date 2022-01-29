@@ -1,3 +1,6 @@
+/**
+ * @description container components that holds the serive section components
+ */
 import React from "react";
 import { UserType, CategoryCard } from "../../components";
 //css
@@ -5,11 +8,21 @@ import "./service.css";
 //service section data
 import serviceData from "../../data/homePage";
 
+// import positions count and companies count from statistics helper file
+import { positionCount, companiesCount } from "../../data/statistics";
+
 const Service = () => {
-  // mapping through service data to extrct userType components
+  // mapping through service data to extrct userType components data
   const userTypes = serviceData.service.userTypes.map((userType) => {
     return <UserType key={userType.id} data={userType} />;
   });
+
+  // maping through serviceData to extract the categoryCard component data
+  const categoryCards = serviceData.service.jobCategoryData.map(
+    (categoryCard) => {
+      return <CategoryCard key={categoryCard.id} data={categoryCard} />;
+    }
+  );
 
   return (
     <div className="alps-east__service">
@@ -22,20 +35,16 @@ const Service = () => {
         or a <strong>candidate</strong>.
       </p>
       <div className="alps-east__user-type-container center">
-        {/* <UserType />
-        <UserType /> */}
+        {/* put the user type component here */}
         {userTypes}
       </div>
       <p className="alps-east__service__header-text">
-        You can find more than 600 job position for more than 40 companies in
-        different fields
+        You can find more than {positionCount.positions} job position provided
+        from {companiesCount.companies} companies in different fields
       </p>
       <div className="alps-east__service__category-card-list">
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
+        {/* list of category cards */}
+        {categoryCards}
       </div>
     </div>
   );

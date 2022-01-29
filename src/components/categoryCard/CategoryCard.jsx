@@ -1,20 +1,32 @@
+/**
+ * @description this is job category card components.it is in the Service section. it contains information about number of the job positions and related companies
+ * it accept props of the following properties
+ * @param {integer}   id        : id of the job category
+ * @param {string}    category  : category name
+ * @param {integer}   positions : number of openining position
+ * @param {sv}        Icon      : Icon of the category card
+ */
 import React from "react";
-//icons
-import { FaGraduationCap } from "react-icons/fa";
 //css
 import "./categoryCard.css";
 
-const CategoryCard = () => {
+const CategoryCard = (props) => {
   return (
     <div className="alps-east__service__category-card center">
-      <FaGraduationCap color="#554A4A" size={70} />
-      <p className="alps-east__service__category-card__title">Engineering</p>
+      {/* catrgory card icon */}
+      {props.data.Icon}
+      <p className="alps-east__service__category-card__title">
+        {/* category name */}
+        {props.data.category}
+      </p>
       <p className="alps-east__service__category-card__position-count">
-        <span className="number">2555</span>{" "}
+        {/* opening positions count */}
+        <span className="number">{props.data.positions}</span>{" "}
         <span className="count-for-what">Opening positions</span>
       </p>
       <p className="alps-east__service__category-card__company-count">
-        <span className="number">4</span>{" "}
+        {/* company count */}
+        <span className="number">{props.data.companies}</span>{" "}
         <span className="count-for-what">Employers</span>
       </p>
     </div>
