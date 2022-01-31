@@ -90,6 +90,9 @@ strong {
 }
 
 @media (max-width: 700px) {
+  .alps-east__feature-header {
+    padding-top: 4rem;
+  }
   .alps-east__feature-header__search-form {
     grid-template-columns: 1fr;
   }
@@ -110,5 +113,8 @@ strong {
   } */
   .alps-east__feature-header__search-form {
     width: 90%;
+  }
+  .alps-east__feature-header {
+    padding-top: 6rem;
   }
 }

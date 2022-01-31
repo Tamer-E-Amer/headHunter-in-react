@@ -21,8 +21,11 @@ const Navbar = () => {
   const [isMenuToggle, setIsMenuToggle] = React.useState(false);
   //state for screen of 700px
   const [windowSize, setWindowSize] = React.useState(window.outerWidth);
-  // functional component for navbar menu
 
+  // state for scrolling
+  const [isScroll, setIsScroll] = React.useState(false);
+
+  // functional component for navbar menu
   const NavbarButtons = (props) => (
     <>
       <li className="center active">
@@ -85,24 +88,40 @@ const Navbar = () => {
   const handleToggle = () => {
     setIsMenuToggle((previsMenuToogle) => !previsMenuToogle);
   };
+  //console.log(windowSize);
+  // console.log("isScroll", isScroll);
+
   // handle resize window
-  console.log(windowSize);
   React.useEffect(() => {
+    const watchWidth = () => {
+      setWindowSize(window.outerWidth);
+    };
     // setWindowSize(window.outerWidth);
-    window.addEventListener(
-      "resize",
-      () => {
-        setWindowSize(window.outerWidth);
-      },
-      [windowSize]
-    );
-  });
+    window.addEventListener("resize", watchWidth);
+    // clean up function to avoid memory leak
+    return () => {
+      window.removeEventListener("resize", watchWidth);
+    };
+  }, [windowSize]);
+
+  //test navbar with scrolling
+  React.useEffect(() => {
+    const watchScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScroll(true);
+      }
+    };
+
+    window.addEventListener("scroll", watchScroll);
+  }, []);
 
   return (
-    <div className="alps-east__navbar ">
+    <div
+      className={isScroll ? "alps-east__navbar fixed " : "alps-east__navbar"}
+    >
       {/* logo */}
       <img src={logo} alt="logo" className="alps-east__navbar__logo" />
-      {/* navbar Buttons */}
+      {/* navbar Buttons from functional component */}
       <ul className="alps-east__navbar__menu-buttons center">
         <NavbarButtons windowSize={windowSize} />
       </ul>

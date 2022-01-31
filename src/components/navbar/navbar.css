@@ -53,6 +53,12 @@
   position: relative;
   width: 100%;
 }
+/* test scroll */
+.alps-east__navbar.fixed {
+  position: fixed;
+  /* background-color: var(--light-gray); */
+  z-index: 10000;
+}
 
 /* logo */
 .alps-east__navbar__logo {
