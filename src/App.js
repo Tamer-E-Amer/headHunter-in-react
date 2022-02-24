@@ -1,20 +1,12 @@
 import React from "react";
-// components and containers
-import { Navbar } from "./components";
-import { FeatureHeader, Service, Statistics, AboutUs, ContactUs, Footer} from "./containers";
 //css
 import './app.css';
+// Pages
+import { HomePage, Login, Register} from "./pages";
 const App = () => {
   return (
     <>
-      <Navbar />
-      <FeatureHeader />
-      <Service/>
-      <Statistics/>
-      <AboutUs/>
-      <ContactUs/>
-      <Footer/>
-
+        <Register/>
     </>
   );
 };

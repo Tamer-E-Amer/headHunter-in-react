@@ -1,0 +1,16 @@
+.regsiter__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(159, 154, 154, 0.27);
+}
+.regsiter__header img {
+  width: 488px;
+}
+.regsiter__header div {
+  flex: 1;
+  padding-left: 9rem;
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+}

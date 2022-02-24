@@ -1,0 +1,19 @@
+// styling Register page header
+.regsiter__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(159, 154, 154, 27%);
+  //   header image
+  img {
+    width: 488px;
+  }
+  // header title
+  div {
+    flex: 1;
+    padding-left: 9rem;
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+  }
+}

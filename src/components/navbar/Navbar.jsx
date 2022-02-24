@@ -104,16 +104,17 @@ const Navbar = () => {
     };
   }, [windowSize]);
 
+  //TODO: test scrolling in small pages such as login and sign in
   //test navbar with scrolling
-  React.useEffect(() => {
-    const watchScroll = () => {
-      if (window.scrollY > 100) {
-        setIsScroll(true);
-      }
-    };
+  // React.useEffect(() => {
+  //   const watchScroll = () => {
+  //     if (window.scrollY > 100) {
+  //       setIsScroll(true);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", watchScroll);
-  }, []);
+  //   window.addEventListener("scroll", watchScroll);
+  // }, []);
 
   return (
     <div
