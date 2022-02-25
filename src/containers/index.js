@@ -6,3 +6,5 @@ export {default as Footer} from './footer/Footer';
 export {default as ContactUs} from './contactUs/ContactUs';
 export {default as LoginForm} from './LoginForm/LoginForm';
 export {default as RegisterForm} from './RegisterForm/RegisterForm';
+export {default as ContactAlpsEastForm} from './ContactAlpsEAstForm/ContactAlpsEastForm';
+export {default as ContactAlpsEastMain} from './ContactAlpsEastMain/ContactAlpsEastMain';

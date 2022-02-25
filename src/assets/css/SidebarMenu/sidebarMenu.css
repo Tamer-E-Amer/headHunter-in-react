@@ -1,0 +1,38 @@
+.app__contact-alps-easr__side-bar__item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.app__contact-alps-east__side-bar__left-border {
+  width: 4px;
+  height: 42px;
+  margin-right: 10px;
+}
+
+.light-gray {
+  background-color: var(--light-gray);
+}
+
+.red {
+  background-color: var(--red-color);
+}
+
+.dark-gray {
+  background-color: var(--dark-gray);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.app__contact-alps-east__side-bar__text {
+  color: var(--dark-gray);
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.app__contact-alps-east__side-bar__text:hover {
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+}

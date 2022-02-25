@@ -4,8 +4,11 @@
   --light-gray: #9f9a9a;
   --med-gray: #554a4a;
   --dark-gray: #2d2626;
+  --yellow: #feed00;
+  --dark-yellow: #feb449;
   --inpu-border: 1px solid #707070;
   --card-border: 1px solid rgba(159, 154, 154, 0.6);
+  --border: 0.5px solid rgba(159, 154, 154, 50%);
 }
 
 /* general rules */

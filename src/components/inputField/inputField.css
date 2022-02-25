@@ -2,7 +2,7 @@
 .alps-east__input-field {
   width: 90%;
   height: 50px;
-  border: 1px solid var(--input-border);
+  border: var(--border);
   text-align: center;
   padding: 0.5rem;
   margin: 0.75rem 1rem 0.75rem 0;

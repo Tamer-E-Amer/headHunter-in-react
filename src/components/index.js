@@ -5,3 +5,6 @@ export {default as StatisticsBox} from './statisticsBox/StatisticsBox';
 export {default as InputField} from './inputField/InputField';
 export {default as RedButton} from './redButton/RedButton';
 export {default as PageHeader} from './PageHeader/PageHeader';
+export {default as SidebarMenu} from './SidebarMenu/SidebarMenu';
+export {default as EmployerInfo} from './EmployerInfo/EmployerInfo';
+export {default as AlpsEastBenefits} from './AlpsEastBenefits/AlpsEastBenefits';
