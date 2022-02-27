@@ -8,3 +8,6 @@ export {default as LoginForm} from './LoginForm/LoginForm';
 export {default as RegisterForm} from './RegisterForm/RegisterForm';
 export {default as ContactAlpsEastForm} from './ContactAlpsEAstForm/ContactAlpsEastForm';
 export {default as ContactAlpsEastMain} from './ContactAlpsEastMain/ContactAlpsEastMain';
+export {default as MessagesMain} from './MessagesMain/MessagesMain';
+export {default as MessageList} from './MessageList/MessageList';
+export {default as MessageDetails} from './MessageDetails/MessageDetails';

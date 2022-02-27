@@ -1,12 +1,6 @@
 import React from "react";
 // components
-import {
-  Navbar,
-  PageHeader,
-  SidebarMenu,
-  EmployerInfo,
-  AlpsEastBenefits,
-} from "../components";
+import { Navbar, PageHeader } from "../components";
 import { Footer, ContactAlpsEastMain } from "../containers";
 // page title image
 import contactAlpsEastImage from "../images/title-header.png";

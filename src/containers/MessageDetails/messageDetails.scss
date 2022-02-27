@@ -1,0 +1,47 @@
+// message details styling
+
+.app__messages__message-details {
+  height: auto;
+  padding: 1rem 0;
+
+  //header row
+  .header-row {
+    justify-content: flex-start;
+    background-color: rgb(159, 154, 154, 30%);
+    padding: 0.15rem 0.5rem;
+    border-radius: 5px;
+    width: 50%;
+    margin: 1rem 0;
+
+    // header contents
+    span:nth-child(2),
+    span:nth-child(3) {
+      display: inline-block;
+      margin: 0.5rem 2rem 0.5rem 0.5rem;
+    }
+
+    span:nth-child(2) {
+      width: 50px;
+    }
+    span:nth-child(3) {
+      width: 150px;
+    }
+  }
+
+  // details
+  .details {
+    background-color: rgb(159, 154, 154, 30%);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    line-height: 1.5;
+    height: auto;
+  }
+}
+
+// reply button
+
+.app__messages__message-details__reply {
+  height: 40px;
+  font-size: 1.2rem;
+}

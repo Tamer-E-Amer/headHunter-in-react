@@ -1,0 +1,36 @@
+.app__messages__message-details {
+  height: auto;
+  padding: 1rem 0;
+}
+.app__messages__message-details .header-row {
+  justify-content: flex-start;
+  background-color: rgba(159, 154, 154, 0.3);
+  padding: 0.15rem 0.5rem;
+  border-radius: 5px;
+  width: 50%;
+  margin: 1rem 0;
+}
+.app__messages__message-details .header-row span:nth-child(2),
+.app__messages__message-details .header-row span:nth-child(3) {
+  display: inline-block;
+  margin: 0.5rem 2rem 0.5rem 0.5rem;
+}
+.app__messages__message-details .header-row span:nth-child(2) {
+  width: 50px;
+}
+.app__messages__message-details .header-row span:nth-child(3) {
+  width: 150px;
+}
+.app__messages__message-details .details {
+  background-color: rgba(159, 154, 154, 0.3);
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  line-height: 1.5;
+  height: auto;
+}
+
+.app__messages__message-details__reply {
+  height: 40px;
+  font-size: 1.2rem;
+}

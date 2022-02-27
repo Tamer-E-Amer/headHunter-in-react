@@ -1,0 +1,26 @@
+.app__messages__main {
+  padding: 1rem 4rem;
+  display: grid;
+  grid-template-areas: "employer-info messages-wraper" "sidebar-menu    messages-wraper" "benefits    benefits";
+  grid-template-rows: 200px auto;
+  grid-template-columns: 30% 70%;
+}
+.app__messages__main .employer-info {
+  grid-area: employer-info;
+  height: 200px;
+}
+.app__messages__main .sidebar-menu {
+  grid-area: sidebar-menu;
+  height: 200px;
+}
+.app__messages__main .messages-wraper {
+  grid-area: messages-wraper;
+  padding: 0 0 6rem 2rem;
+  margin-top: 3rem;
+  border-left: 1px solid rgba(159, 154, 154, 0.5);
+  height: auto;
+}
+.app__messages__main .benefits {
+  grid-area: benefits;
+  width: 50%;
+}

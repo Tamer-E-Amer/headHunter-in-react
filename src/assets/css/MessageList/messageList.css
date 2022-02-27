@@ -1,0 +1,42 @@
+.app__messages__message-list {
+  height: auto;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(159, 154, 154, 0.5);
+}
+
+.app__messages__message-list__top-colored-line {
+  justify-content: flex-start;
+}
+.app__messages__message-list__top-colored-line .light-gray,
+.app__messages__message-list__top-colored-line .red-color,
+.app__messages__message-list__top-colored-line .dark-yellow {
+  height: 5px;
+}
+.app__messages__message-list__top-colored-line .light-gray {
+  background-color: var(--light-gray);
+  flex: 1;
+}
+.app__messages__message-list__top-colored-line .red-color {
+  background-color: var(--red-color);
+  flex: 2;
+}
+.app__messages__message-list__top-colored-line .dark-yellow {
+  background-color: var(--dark-yellow);
+  flex: 1;
+}
+
+.app__messages__message-list__check-del-buttons {
+  margin: 2rem 0;
+}
+
+.app__messages__messageList__delete-btn,
+.app__messages__messageList__check-all-btn {
+  width: 90px;
+  height: 30px;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.app__messages__messageList__check-all-btn {
+  background-color: var(--light-gray);
+}

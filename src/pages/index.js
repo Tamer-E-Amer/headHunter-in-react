@@ -5,3 +5,4 @@ export {default as HomePage} from './HomePage';
 export {default as Login} from './Login';
 export {default as Register} from './Register';
 export {default as ContactAlpsEast} from './ContactAlpsEast';
+export {default as Messages} from './Messages';

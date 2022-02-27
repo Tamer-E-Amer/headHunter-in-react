@@ -1,0 +1,53 @@
+// styling message list container
+
+.app__messages__message-list {
+  height: auto;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgb(159, 154, 154, 50%);
+}
+
+// top colored line
+.app__messages__message-list__top-colored-line {
+  .light-gray,
+  .red-color,
+  .dark-yellow {
+    height: 5px;
+  }
+
+  justify-content: flex-start;
+
+  // gray color
+  .light-gray {
+    background-color: var(--light-gray);
+    flex: 1;
+  }
+  //red part
+  .red-color {
+    background-color: var(--red-color);
+    flex: 2;
+  }
+
+  //yellow part
+  .dark-yellow {
+    background-color: var(--dark-yellow);
+    flex: 1;
+  }
+}
+
+// checkall and delete buttons
+.app__messages__message-list__check-del-buttons {
+  margin: 2rem 0;
+}
+
+// delete button
+.app__messages__messageList__delete-btn,
+.app__messages__messageList__check-all-btn {
+  width: 90px;
+  height: 30px;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.app__messages__messageList__check-all-btn {
+  background-color: var(--light-gray);
+}

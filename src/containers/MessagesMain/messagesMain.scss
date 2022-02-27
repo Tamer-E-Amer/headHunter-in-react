@@ -1,0 +1,39 @@
+// styling the main div of contact Alps east page
+
+.app__messages__main {
+  padding: 1rem 4rem;
+  display: grid;
+  grid-template-areas: 
+      // row 1
+
+    "employer-info messages-wraper"
+    // row 2
+    "sidebar-menu    messages-wraper"
+    // row 3
+    "benefits    benefits";
+  grid-template-rows: 200px auto;
+  grid-template-columns: 30% 70%;
+
+  // areas
+  .employer-info {
+    grid-area: employer-info;
+    height: 200px;
+  }
+  .sidebar-menu {
+    grid-area: sidebar-menu;
+    height: 200px;
+  }
+
+  .messages-wraper {
+    grid-area: messages-wraper;
+    padding: 0 0 6rem 2rem;
+    margin-top: 3rem;
+    border-left: 1px solid rgba(159, 154, 154, 50%);
+    height: auto;
+  }
+
+  .benefits {
+    grid-area: benefits;
+    width: 50%;
+  }
+}

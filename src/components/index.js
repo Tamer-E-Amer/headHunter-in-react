@@ -8,3 +8,4 @@ export {default as PageHeader} from './PageHeader/PageHeader';
 export {default as SidebarMenu} from './SidebarMenu/SidebarMenu';
 export {default as EmployerInfo} from './EmployerInfo/EmployerInfo';
 export {default as AlpsEastBenefits} from './AlpsEastBenefits/AlpsEastBenefits';
+export {default as MessageItem} from './MessageItem/MessageItem';
