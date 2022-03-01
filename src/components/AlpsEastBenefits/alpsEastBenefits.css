@@ -1,0 +1,17 @@
+.app__alps-east-benefits .app__alps-east-benefits__title {
+  padding: 1rem;
+  margin: 1rem;
+  color: #fff;
+  background-color: var(--dark-gray);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.app__alps-east-benefits .app__alps-east-benefits__text {
+  color: var(--dark-gray);
+  line-height: 1.5;
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+/*# sourceMappingURL=alpsEastBenefits.css.map */

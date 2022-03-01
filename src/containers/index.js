@@ -11,3 +11,5 @@ export {default as ContactAlpsEastMain} from './ContactAlpsEastMain/ContactAlpsE
 export {default as MessagesMain} from './MessagesMain/MessagesMain';
 export {default as MessageList} from './MessageList/MessageList';
 export {default as MessageDetails} from './MessageDetails/MessageDetails';
+export {default as CompanyProfileMain} from './CompanyProfileMain/CompanyProfileMain';
+export {default as CompanyProfileForm} from './CompanyProfileForm/CompanyProfileForm';

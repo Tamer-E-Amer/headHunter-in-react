@@ -9,7 +9,7 @@
 }
 .regsiter__header div {
   flex: 1;
-  padding-left: 9rem;
+  text-align: center;
   font-size: 2rem;
   font-weight: 500;
   color: var(--dark-gray);

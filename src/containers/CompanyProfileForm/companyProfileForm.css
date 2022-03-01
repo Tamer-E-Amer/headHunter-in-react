@@ -1,0 +1,68 @@
+.app__company-profile__upper-colored-bar {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.app__company-profile__upper-colored-bar .light-gray,
+.app__company-profile__upper-colored-bar .red-color,
+.app__company-profile__upper-colored-bar .dark-yellow {
+  height: 5px;
+}
+
+.app__company-profile__upper-colored-bar .light-gray {
+  background-color: var(--light-gray);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.app__company-profile__upper-colored-bar .red-color {
+  background-color: var(--red-color);
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.app__company-profile__upper-colored-bar .dark-yellow {
+  background-color: var(--dark-yellow);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.app__company-profile-form__input {
+  border: var(--border);
+  width: 100%;
+}
+
+.app__company-profile-form__about {
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  border: 1px solid var(--input-border);
+  padding: 1rem;
+  margin: 0.5rem 1rem 0.75rem 0;
+  border: var(--border);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+  color: var(--med-gray);
+}
+
+.app__company-profile__form__button {
+  height: 50px;
+  width: 250px;
+}
+
+.app_company-profile-address {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.app_company-profile-address .add-button {
+  cursor: pointer;
+}
+/*# sourceMappingURL=companyProfileForm.css.map */

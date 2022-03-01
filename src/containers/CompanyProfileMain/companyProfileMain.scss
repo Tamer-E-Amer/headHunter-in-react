@@ -1,14 +1,14 @@
-// styling the main div of contact Alps east page
+// styling the main div of company profile page
 
-.app__contact-alps-east__main {
+.app__company-profile__main {
   padding: 1rem 4rem;
   display: grid;
   grid-template-areas: 
-    // row 1
+      // row 1
 
-    "employer-info contact-form"
+    "employer-info company-profile-wraper"
     // row 2
-    "sidebar-menu    contact-form"
+    "sidebar-menu    company-profile-wraper"
     // row 3
     "benefits    benefits";
   grid-template-rows: 200px auto;
@@ -24,11 +24,12 @@
     height: 200px;
   }
 
-  .contact-form {
-    grid-area: contact-form;
+  .company-profile-wraper {
+    grid-area: company-profile-wraper;
     padding: 0 0 6rem 2rem;
     margin-top: 3rem;
     border-left: 1px solid rgba(159, 154, 154, 50%);
+    height: auto;
   }
 
   .benefits {

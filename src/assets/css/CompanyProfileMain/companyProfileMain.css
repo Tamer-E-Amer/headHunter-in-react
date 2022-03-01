@@ -1,0 +1,26 @@
+.app__company-profile__main {
+  padding: 1rem 4rem;
+  display: grid;
+  grid-template-areas: "employer-info company-profile-wraper" "sidebar-menu    company-profile-wraper" "benefits    benefits";
+  grid-template-rows: 200px auto;
+  grid-template-columns: 350px 70%;
+}
+.app__company-profile__main .employer-info {
+  grid-area: employer-info;
+  height: 200px;
+}
+.app__company-profile__main .sidebar-menu {
+  grid-area: sidebar-menu;
+  height: 200px;
+}
+.app__company-profile__main .company-profile-wraper {
+  grid-area: company-profile-wraper;
+  padding: 0 0 6rem 2rem;
+  margin-top: 3rem;
+  border-left: 1px solid rgba(159, 154, 154, 0.5);
+  height: auto;
+}
+.app__company-profile__main .benefits {
+  grid-area: benefits;
+  width: 50%;
+}

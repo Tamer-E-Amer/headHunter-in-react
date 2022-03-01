@@ -1,0 +1,43 @@
+.app__contact-alps-east__main {
+  padding: 1rem 4rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "employer-info contact-form" "sidebar-menu    contact-form" "benefits    benefits";
+  -ms-grid-rows: 200px auto;
+      grid-template-rows: 200px auto;
+  -ms-grid-columns: 350px 70%;
+      grid-template-columns: 350px 70%;
+}
+
+.app__contact-alps-east__main .employer-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: employer-info;
+  height: 200px;
+}
+
+.app__contact-alps-east__main .sidebar-menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar-menu;
+  height: 200px;
+}
+
+.app__contact-alps-east__main .contact-form {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: contact-form;
+  padding: 0 0 6rem 2rem;
+  margin-top: 3rem;
+  border-left: 1px solid #9f9a9a;
+}
+
+.app__contact-alps-east__main .benefits {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: benefits;
+  width: 50%;
+}
+/*# sourceMappingURL=contactAlpsEastMain.css.map */

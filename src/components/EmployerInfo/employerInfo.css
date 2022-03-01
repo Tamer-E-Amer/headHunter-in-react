@@ -1,0 +1,54 @@
+.app__contact-alps-east_employer-info__location,
+.app__contact-alps-east_employer-info__employees,
+.app__contact-alps-east_employer-info__found-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.25rem 0 0.25rem 60px;
+}
+
+.app__contact-alps-east_employer-info__location .text,
+.app__contact-alps-east_employer-info__employees .text,
+.app__contact-alps-east_employer-info__found-in .text {
+  margin-left: 10px;
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.app__contact-alps-east__employer-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 2rem;
+  margin: 1rem 0 0rem 0;
+  width: 260px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.app__contact-alps-east__employer-info__title-wrapper {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.app__contact-alps-east__employer-info__title-wrapper .app__contact-alps-east__employer-info__title__logo {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin-right: 10px;
+}
+
+.app__contact-alps-east__employer-info__title-wrapper .app__contact-alps-east__employer-text {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+/*# sourceMappingURL=employerInfo.css.map */

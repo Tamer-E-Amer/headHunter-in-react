@@ -20,3 +20,24 @@
   flex-direction: column;
   align-items: flex-start;
 }
+.alps-east__input-field-row-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+/* label if the direction is horisontal */
+
+.alps-east__input-field__label-horizontal {
+  margin: 0 0.5rem;
+  color: var(--dark-gray);
+  font-weight: 400;
+  width: 100px;
+}
+.alps-east__input-field__label-horizontal-radio {
+  margin: 0 0.5rem;
+  color: var(--dark-gray);
+  font-weight: 400;
+  /* width: 100px; */
+}

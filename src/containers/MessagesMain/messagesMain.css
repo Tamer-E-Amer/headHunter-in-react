@@ -1,0 +1,44 @@
+.app__messages__main {
+  padding: 1rem 4rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "employer-info messages-wraper" "sidebar-menu    messages-wraper" "benefits    benefits";
+  -ms-grid-rows: 200px auto;
+      grid-template-rows: 200px auto;
+  -ms-grid-columns: 350px 70%;
+      grid-template-columns: 350px 70%;
+}
+
+.app__messages__main .employer-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: employer-info;
+  height: 200px;
+}
+
+.app__messages__main .sidebar-menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar-menu;
+  height: 200px;
+}
+
+.app__messages__main .messages-wraper {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: messages-wraper;
+  padding: 0 0 6rem 2rem;
+  margin-top: 3rem;
+  border-left: 1px solid #9f9a9a;
+  height: auto;
+}
+
+.app__messages__main .benefits {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: benefits;
+  width: 50%;
+}
+/*# sourceMappingURL=messagesMain.css.map */

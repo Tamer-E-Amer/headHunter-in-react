@@ -1,0 +1,76 @@
+.app__company-profile__upper-colored-bar {
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+}
+.app__company-profile__upper-colored-bar .light-gray,
+.app__company-profile__upper-colored-bar .red-color,
+.app__company-profile__upper-colored-bar .dark-yellow {
+  height: 5px;
+}
+.app__company-profile__upper-colored-bar .light-gray {
+  background-color: var(--light-gray);
+  flex: 1;
+}
+.app__company-profile__upper-colored-bar .red-color {
+  background-color: var(--red-color);
+  flex: 2;
+}
+.app__company-profile__upper-colored-bar .dark-yellow {
+  background-color: var(--dark-yellow);
+  flex: 1;
+}
+
+.app__company-profile-form__input {
+  border: var(--border);
+  width: 100%;
+}
+
+.app__company-profile-form__input-radio {
+  width: 20px;
+  height: 20px;
+}
+
+.app__company-profile-form__about {
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  border: 1px solid var(--input-border);
+  padding: 1rem;
+  margin: 0.5rem 1rem 0.75rem 0;
+  border: var(--border);
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+  color: var(--med-gray);
+}
+
+.app_company-profile-address {
+  justify-content: flex-start;
+  width: 98%;
+}
+.app_company-profile-address .add-button {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.app_company-profile-address .add-button:hover {
+  background-color: var(--light-gray);
+}
+
+.app__company-profile__form__button {
+  height: 50px;
+  width: 250px;
+}
+
+.app__company-profile__form__business-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+.app__company-profile__form__business-field .biusiness-field-label {
+  width: 85px;
+  margin: 0 0.5rem;
+}
+.app__company-profile__form__business-field .business-field-radio-group {
+  flex: 1;
+}

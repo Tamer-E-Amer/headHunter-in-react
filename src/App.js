@@ -2,11 +2,11 @@ import React from "react";
 //css
 import './app.css';
 // Pages
-import { HomePage, Login, Register,ContactAlpsEast, Messages} from "./pages";
+import { HomePage, Login, Register,ContactAlpsEast, Messages, CompanyProfile} from "./pages";
 const App = () => {
   return (
     <>
-        <Messages/>
+        <CompanyProfile/>
     </>
   );
 };

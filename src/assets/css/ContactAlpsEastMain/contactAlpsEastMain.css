@@ -3,7 +3,7 @@
   display: grid;
   grid-template-areas: "employer-info contact-form" "sidebar-menu    contact-form" "benefits    benefits";
   grid-template-rows: 200px auto;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 350px 70%;
 }
 .app__contact-alps-east__main .employer-info {
   grid-area: employer-info;
