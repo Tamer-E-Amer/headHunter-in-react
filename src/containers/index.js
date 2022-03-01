@@ -13,3 +13,5 @@ export {default as MessageList} from './MessageList/MessageList';
 export {default as MessageDetails} from './MessageDetails/MessageDetails';
 export {default as CompanyProfileMain} from './CompanyProfileMain/CompanyProfileMain';
 export {default as CompanyProfileForm} from './CompanyProfileForm/CompanyProfileForm';
+export {default as PostJobMain} from './PostJobMain/PostJobMain';
+export {default as PostJobForm} from './PostJobForm/PostJobForm';

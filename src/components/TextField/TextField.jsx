@@ -1,12 +1,12 @@
 /**
  * @description this component to build a reusable text area field
- *  @param {string}    name        : accept the name of the input field
- *  @param {string}    id          : accept the ID of the input field
- *  @param {string}    htmlFor     : for the lable of the input field
- *  @param {string}    labelText   : accept the text of the input field label
- *  @param {string}    className   : the calssname of the input field to adjust its styling
- * @param {string}    placeHolder  : the placeHolder of the input field
- * @param {string}    onchange     : the name of the function for onChangeEvent
+ *  @param {string}    name         : accept the name of the input field
+ *  @param {string}    id           : accept the ID of the input field
+ *  @param {string}    htmlFor      : for the lable of the input field
+ *  @param {string}    labelText    : accept the text of the input field label
+ *  @param {string}    className    : the calssname of the input field to adjust its styling
+ * @param  {string}    placeHolder  : the placeHolder of the input field
+ * @param  {string}    onchange     : the name of the function for onChangeEvent
  */
 
 import React from "react";
@@ -23,7 +23,7 @@ const TextField = (props) => {
         value={props.value}
         id={props.id}
         placeholder={props.placeHolder}
-        className={`app__teat-area ${props.className}`}
+        className={`app__text-area ${props.className}`}
         onChange={props.onChange}
       />
     </div>

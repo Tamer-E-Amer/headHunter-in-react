@@ -1,0 +1,39 @@
+// styling the main div of company profile page
+
+.app__post-job__main {
+  padding: 1rem 4rem;
+  display: grid;
+  grid-template-areas: 
+        // row 1
+
+    "employer-info   post-job-wraper"
+    // row 2
+    "sidebar-menu    post-job-wraper"
+    // row 3
+    "benefits        benefits";
+  grid-template-rows: 200px auto;
+  grid-template-columns: 350px 70%;
+
+  // areas
+  .employer-info {
+    grid-area: employer-info;
+    height: 200px;
+  }
+  .sidebar-menu {
+    grid-area: sidebar-menu;
+    height: 200px;
+  }
+
+  .post-job-wraper {
+    grid-area: post-job-wraper;
+    padding: 0 0 6rem 2rem;
+    margin-top: 3rem;
+    border-left: 1px solid rgba(159, 154, 154, 50%);
+    height: auto;
+  }
+
+  .benefits {
+    grid-area: benefits;
+    width: 50%;
+  }
+}

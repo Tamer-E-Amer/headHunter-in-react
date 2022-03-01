@@ -1,0 +1,86 @@
+// post job form styling
+
+//upper colored bar
+.app__post-job__upper-colored-bar {
+  margin-bottom: 2rem;
+  .light-gray,
+  .red-color,
+  .dark-yellow {
+    height: 5px;
+  }
+  justify-content: flex-start;
+  .light-gray {
+    background-color: var(--light-gray);
+    flex: 1;
+  }
+  .red-color {
+    background-color: var(--red-color);
+    flex: 2;
+  }
+  .dark-yellow {
+    background-color: var(--dark-yellow);
+    flex: 1;
+  }
+}
+
+// form
+
+// input field
+.app__job-post-form__input {
+  border: var(--border);
+  width: 100%;
+}
+
+// work place
+.app__job-post-form__input-work-place {
+  width: 100%;
+}
+//salary
+.app__job-post-form__input-salary {
+  width: 100%;
+}
+// radio button
+.app__post-Job-form__input-radio {
+  width: 20px;
+  height: 20px;
+}
+
+// roles
+.app__post-job-form__add-role {
+  justify-content: flex-start;
+  width: 98%;
+  //add button
+  .add-button {
+    cursor: pointer;
+    margin-left: 10px;
+    &:hover {
+      background-color: var(--light-gray);
+    }
+  }
+}
+.app__post-job-form__add-role-field {
+  height: 90px;
+}
+
+// sending button
+.app__post-job__form__button {
+  height: 50px;
+  width: 250px;
+}
+
+//  business field radio group
+.app__post-job__form__business-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 0;
+  //business field label
+  .biusiness-field-label {
+    width: 85px;
+    margin: 0 0.5rem;
+  }
+  //radio group
+  .business-field-radio-group {
+    flex: 1;
+  }
+}

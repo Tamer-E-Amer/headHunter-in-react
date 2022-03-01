@@ -51,9 +51,8 @@ const CompanyProfileForm = () => {
       </div>
       {/* company profile form */}
       <div>
-        {/* company name */}
         <form onSubmit={onSubmitHandler}>
-          {/* message title */}
+          {/* company name */}
           <InputField
             type="text"
             name="companyTitle"

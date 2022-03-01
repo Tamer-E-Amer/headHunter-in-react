@@ -1,23 +1,24 @@
 /**
- * @description main container for Company profile page
+ * @description this container hold the structure of the post job page
  */
 
 import React from "react";
 //css
-import "../../assets/css/CompanyProfileMain/companyProfileMain.css";
+import "../../assets/css/PostJobMain/postJobMain.css";
 // components
 import { EmployerInfo, SidebarMenu, AlpsEastBenefits } from "../../components";
-// containers
-import { CompanyProfileForm } from "../../containers";
-const CompanyProfileMain = () => {
+
+//containers
+import { PostJobForm } from "../../containers";
+const PostJobMain = () => {
   return (
-    <div className="app__company-profile__main">
+    <div className="app__post-job__main">
       <div className="employer-info">
         <EmployerInfo />
       </div>
-      <div className="company-profile-wraper">
-        {/* company profile form*/}
-        <CompanyProfileForm />
+      <div className="post-job-wraper">
+        {/* post job form*/}
+        <PostJobForm />
       </div>
       {/* side bar menu */}
       <div className="sidebar-menu">
@@ -31,4 +32,4 @@ const CompanyProfileMain = () => {
   );
 };
 
-export default CompanyProfileMain;
+export default PostJobMain;
