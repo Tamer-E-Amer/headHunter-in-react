@@ -1,0 +1,11 @@
+.app__job-list__large-image {
+  width: 475px;
+  height: 955px;
+}
+.app__job-list__large-image .title {
+  background-color: var(--dark-gray);
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}

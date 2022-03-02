@@ -1,0 +1,25 @@
+.app__job-list__job-item__job-header {
+  justify-content: flex-start;
+  color: var(--med-gray);
+}
+.app__job-list__job-item__job-header .title {
+  font-size: 1.9rem;
+}
+.app__job-list__job-item__job-header .title,
+.app__job-list__job-item__job-header .location,
+.app__job-list__job-item__job-header .type,
+.app__job-list__job-item__job-header .date {
+  margin-right: 2rem;
+}
+.app__job-list__job-item__job-header .title div,
+.app__job-list__job-item__job-header .location div,
+.app__job-list__job-item__job-header .type div,
+.app__job-list__job-item__job-header .date div {
+  margin-left: 0.5rem;
+}
+
+.app__job-list__job-item__job-body {
+  margin: 1rem 0;
+  line-height: 1.5;
+  color: var(--dark-gray);
+}

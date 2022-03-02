@@ -1,0 +1,28 @@
+// job item styling
+.app__job-list__job-item__job-header {
+  justify-content: flex-start;
+  color: var(--med-gray);
+  // title
+  .title {
+    font-size: 1.9rem;
+  }
+  // separating header items
+  .title,
+  .location,
+  .type,
+  .date {
+    margin-right: 2rem;
+
+    // separatinf text from icons
+    div {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+// job item body
+.app__job-list__job-item__job-body {
+  margin: 1rem 0;
+  line-height: 1.5;
+  color: var(--dark-gray);
+}

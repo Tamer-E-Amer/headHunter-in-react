@@ -15,3 +15,4 @@ export {default as CompanyProfileMain} from './CompanyProfileMain/CompanyProfile
 export {default as CompanyProfileForm} from './CompanyProfileForm/CompanyProfileForm';
 export {default as PostJobMain} from './PostJobMain/PostJobMain';
 export {default as PostJobForm} from './PostJobForm/PostJobForm';
+export {default as SearchFilterBar} from './SearchFilterBar/SearchFilterBar';
