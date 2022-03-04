@@ -11,7 +11,7 @@ const JobListLargeImage = () => {
     <div className="app__job-list__large-image">
       <div className="title center">Information Technology</div>
       <div className="image">
-        <img src={jobListIT} alt="" srcset="" />
+        <img src={jobListIT} alt="" />
       </div>
     </div>
   );

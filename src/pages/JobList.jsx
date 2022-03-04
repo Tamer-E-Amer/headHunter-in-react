@@ -3,8 +3,8 @@
  * it has also search and filter capabilities
  */
 import React from "react";
-import { Navbar, PageHeader, JobItem, JobListLargeImage } from "../components";
-import { Footer, SearchFilterBar } from "../containers";
+import { Navbar, PageHeader } from "../components";
+import { Footer, SearchFilterBar, JobListMain } from "../containers";
 // page title image
 import contactAlpsEastImage from "../images/title-header.png";
 const JobList = () => {
@@ -14,9 +14,7 @@ const JobList = () => {
       <Navbar />
       <PageHeader image={contactAlpsEastImage} text={headerText} />
       <SearchFilterBar />
-
-      <JobItem />
-      <JobListLargeImage />
+      <JobListMain />
       <Footer />
     </div>
   );

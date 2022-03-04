@@ -1,0 +1,9 @@
+.app__job-list__main {
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 4rem;
+}
+
+.benefits {
+  margin: 8rem 0;
+}

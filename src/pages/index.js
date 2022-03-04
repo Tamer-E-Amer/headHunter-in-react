@@ -9,3 +9,4 @@ export {default as Messages} from './Messages';
 export {default as CompanyProfile} from './CompanyProfile';
 export {default as PostJob} from './PostJob';
 export {default as JobList} from './JobList';
+export {default as JobDetails} from './JobDetails';

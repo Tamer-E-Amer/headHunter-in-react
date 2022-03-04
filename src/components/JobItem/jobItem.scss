@@ -1,10 +1,35 @@
 // job item styling
+.app__job-list__job-item {
+  margin: 0 0.5rem;
+}
+
 .app__job-list__job-item__job-header {
+  flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   color: var(--med-gray);
+  // data about location job type and creation date
+  .app__job-list__job-item__loc-type-date {
+    margin: 0.5rem 0;
+    justify-content: center;
+
+    .location {
+      justify-content: flex-start;
+    }
+  }
+
   // title
   .title {
-    font-size: 1.9rem;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 450;
+    background-color: #eee;
+  }
+  .location,
+  .type,
+  .date {
+    width: 200px;
   }
   // separating header items
   .title,

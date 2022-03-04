@@ -5,7 +5,7 @@ import React from "react";
 //css
 import "../../assets/css/SearchFilterBar/searchFilterBar.css";
 //components
-import { InputField } from "../../components";
+import { InputField, JobListfilter } from "../../components";
 const SearchFilterBar = () => {
   return (
     <div className="app__job-list__search-filter-bar center">
@@ -25,7 +25,9 @@ const SearchFilterBar = () => {
           // onChange={onChangeHandler}
         />
       </div>
-      <div className="job-list__search-filter-bar__filter">filter</div>
+      <div className="job-list__search-filter-bar__filter">
+        <JobListfilter/>
+      </div>
     </div>
   );
 };

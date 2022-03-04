@@ -1,0 +1,15 @@
+.app__job-list__search-filter__filter {
+  margin-left: 4rem;
+}
+.app__job-list__search-filter__filter .filters {
+  margin: 0.5rem 0;
+}
+.app__job-list__search-filter__filter .filters label {
+  margin-left: 0.5rem;
+}
+.app__job-list__search-filter__filter .filters input {
+  margin-left: 1rem;
+}
+.app__job-list__search-filter__filter .filters select {
+  font-size: 1rem;
+}
