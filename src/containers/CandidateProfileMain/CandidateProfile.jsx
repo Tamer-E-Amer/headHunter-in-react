@@ -6,14 +6,19 @@ import React from "react";
 //css
 import "../../assets/css/CandidateProfileMain/candidateProfileMain.css";
 // components
-import { EmployerInfo, SidebarMenu, AlpsEastBenefits } from "../../components";
+import {
+  EmployerInfo,
+  SidebarMenu,
+  AlpsEastBenefits,
+  CandidateInfo,
+} from "../../components";
 // containers
 import { CompanyProfileForm } from "../../containers";
 const CandidateProfile = () => {
   return (
     <div className="app__candidate-profile__main">
       <div className="candidate-info">
-        <EmployerInfo />
+        <CandidateInfo />
       </div>
       <div className="candidate-profile-wraper">
         {/* candidate profile form*/}

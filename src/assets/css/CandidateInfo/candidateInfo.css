@@ -1,0 +1,40 @@
+.app__candidate-profile__candidate-info__location,
+.app__candidate-profile__candidate-info__mail,
+.app__candidate-profile__candidate-info__position {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0 0.25rem 60px;
+}
+.app__candidate-profile__candidate-info__location .text,
+.app__candidate-profile__candidate-info__mail .text,
+.app__candidate-profile__candidate-info__position .text {
+  margin-left: 10px;
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.app__candidate-profile__candidate-info {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+  margin: 1rem 0 0rem 0;
+  width: 260px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.app__candidate-profile__candidate-info__name-wrapper {
+  justify-content: flex-start;
+}
+.app__candidate-profile__candidate-info__name-wrapper .app__candidate-profile__candidate-info__name__avatar {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.app__candidate-profile__candidate-info__name-wrapper .app__candidate-profile__name-text {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+}

@@ -14,3 +14,4 @@ export {default as JobItem} from './JobItem/JobItem';
 export {default as JobListLargeImage} from './JobListLargeImage/JobListLargeImage';
 export {default as JobListfilter} from './JobListFilter/JobListFilter';
 export {default as DottedList} from './DottedList/DottedList';
+export {default as CandidateInfo} from './CandidateInfo/CandidateInfo';
