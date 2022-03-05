@@ -9,11 +9,13 @@ import { Footer, JobDetailsMain } from "../containers";
 import contactAlpsEastImage from "../images/title-header.png";
 const JobDetails = () => {
   const headerText = "Job details";
+  // job id - we pass the job id to the JobDetailsMain container as a prop to get the job details according to it
+  const jobId = 1;
   return (
     <div>
       <Navbar />
       <PageHeader image={contactAlpsEastImage} text={headerText} />
-      <JobDetailsMain/>
+      <JobDetailsMain jobId={jobId} />
       <Footer />
     </div>
   );

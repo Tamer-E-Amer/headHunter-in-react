@@ -1,0 +1,10 @@
+.app__dotte-list__list {
+  padding: 0 1rem;
+  margin: 1rem 0.5rem;
+}
+
+.app__dotte-list__list-item {
+  color: var(--dark-gray);
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}

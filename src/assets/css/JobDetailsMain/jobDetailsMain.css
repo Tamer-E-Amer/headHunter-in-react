@@ -1,4 +1,29 @@
-.app__job-details__main {
+.app__job-details-main {
   padding: 1rem 4rem;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.app__job-details-main__details {
+  border-right: 1px solid rgba(159, 154, 154, 0.5);
+  padding-right: 0.5rem;
+  width: 60%;
+}
+.app__job-details-main__details .list {
+  color: var(--dark-gray);
+}
+
+.app__job-details-main__benefits-suggestion {
+  width: 40%;
+  min-height: auto;
+  padding-left: 1rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 450;
+}
+
+.app__job-details__alps-east-benefits {
+  margin: 0 3rem;
 }
