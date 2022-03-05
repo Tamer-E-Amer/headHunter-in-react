@@ -1,7 +1,8 @@
 import React from "react";
 // components
 import { Navbar, PageHeader } from "../components";
-import { Footer, CompanyProfileMain} from "../containers";
+//containers
+import { Footer, CompanyProfileMain } from "../containers";
 // page title image
 import mssageImage from "../images/title-header.png";
 const Messages = () => {

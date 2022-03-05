@@ -1,0 +1,26 @@
+.app__candidate-profile__main {
+  padding: 1rem 4rem;
+  display: grid;
+  grid-template-areas: "candidate-info  candidate-profile-wraper" "sidebar-menu    candidate-profile-wraper" "benefits    benefits";
+  grid-template-rows: 200px auto;
+  grid-template-columns: 350px 70%;
+}
+.app__candidate-profile__main .candidate-info {
+  grid-area: candidate-info;
+  height: 200px;
+}
+.app__candidate-profile__main .sidebar-menu {
+  grid-area: sidebar-menu;
+  height: 200px;
+}
+.app__candidate-profile__main .candidate-profile-wraper {
+  grid-area: candidate-profile-wraper;
+  padding: 0 0 6rem 2rem;
+  margin-top: 3rem;
+  border-left: 1px solid rgba(159, 154, 154, 0.5);
+  height: auto;
+}
+.app__candidate-profile__main .benefits {
+  grid-area: benefits;
+  width: 50%;
+}

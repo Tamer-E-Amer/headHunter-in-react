@@ -2,10 +2,30 @@ import React from "react";
 //css
 import "../../assets/css/SidebarMenu/sidebarMenu.css";
 // sidebar data
-import { employerSideBarMenu } from "../../data/SidebarMenu";
-const SidebarMenu = () => {
+import {
+  employerSideBarMenu,
+  candidateSideBarMenu,
+} from "../../data/SidebarMenu";
+const SidebarMenu = (props) => {
   //   console.log(employerSideBarMenu);
-  const sideBar = employerSideBarMenu.map((item) => {
+  // get candidate sideBarMenu
+  // check the menuFor prop
+  let menu = "";
+  switch (props.menuFor) {
+    case "candidate":
+      menu = candidateSideBarMenu.map((item) => {
+        return item;
+      });
+      break;
+
+    default:
+      menu = employerSideBarMenu.map((item) => {
+        return item;
+      });
+      break;
+  }
+
+  const sideBar = menu.map((item) => {
     // test the color of the sidebar menu item
     const color = item.color;
     let backColorClass = "";
@@ -28,6 +48,7 @@ const SidebarMenu = () => {
         break;
     }
     return (
+      // return menue item
       <div className="app__contact-alps-easr__side-bar__item" key={item.id}>
         <div
           className={`app__contact-alps-east__side-bar__left-border ${backColorClass}`}
