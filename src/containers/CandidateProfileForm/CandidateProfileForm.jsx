@@ -13,7 +13,11 @@ import "../../assets/css/CandidateProfileForm/candidateProfileForm.css";
 //components
 import { TopColoredBar, InputField } from "../../components";
 // containers
-import { CandidatePersonal } from "../../containers";
+import {
+  CandidatePersonal,
+  CandidateLearning,
+  CandidateWorkExperience,
+} from "../../containers";
 const CandidateProfileForm = () => {
   return (
     <div>
@@ -21,6 +25,8 @@ const CandidateProfileForm = () => {
       <div>
         <form>
           <CandidatePersonal />
+          <CandidateLearning />
+          <CandidateWorkExperience />
         </form>
       </div>
     </div>

@@ -21,3 +21,5 @@ export {default as JobDetailsMain}              from './JobDetailsMain/JobDetail
 export {default as CandidateProfileMain}        from './CandidateProfileMain/CandidateProfileMain';
 export {default as CandidateProfileForm}        from './CandidateProfileForm/CandidateProfileForm';
 export {default as CandidatePersonal}           from './CandidatePersonal/CandidatePersonal';
+export {default as CandidateLearning}           from './CandidateLearning/CandidateLearning';
+export {default as CandidateWorkExperience}     from './CandidateWorkExpereience/CandidateWorkExperience';

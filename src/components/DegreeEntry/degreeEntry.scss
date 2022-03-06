@@ -1,0 +1,20 @@
+// degree entry component
+
+.app__candidate-profile-form__from-to {
+  justify-content: space-between;
+}
+.app__candidate-profile-form__buttons {
+  justify-content: flex-end;
+}
+
+.app__candidate-profile__gray-button {
+  height: 50px;
+  background-color: var(--dark-gray);
+  font-size: 1rem;
+  margin-left: 1rem;
+
+  // hover effect
+  &:hover {
+    background-color: var(--med-gray);
+  }
+}

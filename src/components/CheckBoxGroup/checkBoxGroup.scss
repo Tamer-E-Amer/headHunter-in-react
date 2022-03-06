@@ -1,19 +1,18 @@
-// styling Radio group component
-
+// Styling the CheckBox group
 // radioButton wrapper
-.app__radio-group-wrapper {
+.app__check-box-group-wrapper {
   justify-content: flex-start;
   height: 50px;
   padding: 0.5rem;
   margin: 0.75rem 1rem 0.75rem 0;
 
-  // label of the radio group
+  // label of the check box group
   .label {
     width: 95px;
     // margin-left: 0.5rem;
   }
 }
-.app__radio-group {
+.app__check-box-group {
   margin: 1.5rem;
   // input
   input {
