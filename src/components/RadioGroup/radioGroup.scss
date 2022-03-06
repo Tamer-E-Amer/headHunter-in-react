@@ -1,0 +1,26 @@
+// styling Radio group component
+
+// radioButton wrapper
+.app__radio-group-wrapper {
+  justify-content: flex-start;
+  height: 50px;
+  padding: 0.5rem;
+  margin: 0.75rem 1rem 0.75rem 0;
+
+  // label of the radio group
+  .label {
+    width: 95px;
+    // margin-left: 0.5rem;
+  }
+}
+.app__radio-group {
+  margin: 1.5rem;
+  // input
+  input {
+    height: 20px;
+    width: 20px;
+  }
+  label {
+    margin: 0 0.5rem;
+  }
+}

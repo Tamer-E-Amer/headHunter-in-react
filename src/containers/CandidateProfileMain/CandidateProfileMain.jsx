@@ -6,15 +6,10 @@ import React from "react";
 //css
 import "../../assets/css/CandidateProfileMain/candidateProfileMain.css";
 // components
-import {
-  EmployerInfo,
-  SidebarMenu,
-  AlpsEastBenefits,
-  CandidateInfo,
-} from "../../components";
+import { SidebarMenu, AlpsEastBenefits, CandidateInfo } from "../../components";
 // containers
-import { CompanyProfileForm } from "../../containers";
-const CandidateProfile = () => {
+import { CandidateProfileForm } from "../../containers";
+const CandidateProfileMain = () => {
   return (
     <div className="app__candidate-profile__main">
       <div className="candidate-info">
@@ -22,7 +17,7 @@ const CandidateProfile = () => {
       </div>
       <div className="candidate-profile-wraper">
         {/* candidate profile form*/}
-        <CompanyProfileForm />
+        <CandidateProfileForm />
       </div>
       {/* side bar menu */}
       <div className="sidebar-menu">
@@ -36,4 +31,4 @@ const CandidateProfile = () => {
   );
 };
 
-export default CandidateProfile;
+export default CandidateProfileMain;

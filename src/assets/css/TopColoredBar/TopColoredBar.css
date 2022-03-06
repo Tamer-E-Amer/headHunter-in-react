@@ -1,0 +1,21 @@
+.app__upper-colored-bar {
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+}
+.app__upper-colored-bar .light-gray,
+.app__upper-colored-bar .red-color,
+.app__upper-colored-bar .dark-yellow {
+  height: 5px;
+}
+.app__upper-colored-bar .light-gray {
+  background-color: var(--light-gray);
+  flex: 1;
+}
+.app__upper-colored-bar .red-color {
+  background-color: var(--red-color);
+  flex: 2;
+}
+.app__upper-colored-bar .dark-yellow {
+  background-color: var(--dark-yellow);
+  flex: 1;
+}

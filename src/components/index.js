@@ -15,3 +15,5 @@ export {default as JobListLargeImage} from './JobListLargeImage/JobListLargeImag
 export {default as JobListfilter} from './JobListFilter/JobListFilter';
 export {default as DottedList} from './DottedList/DottedList';
 export {default as CandidateInfo} from './CandidateInfo/CandidateInfo';
+export {default as TopColoredBar} from './TopColoredBar/TopColoredBar';
+export {default as RadioGroup} from './RadioGroup/RadioGroup';

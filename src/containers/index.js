@@ -18,4 +18,6 @@ export {default as PostJobForm}                 from './PostJobForm/PostJobForm'
 export {default as SearchFilterBar}             from './SearchFilterBar/SearchFilterBar';
 export {default as JobListMain}                 from './JobListMain/JobListMain';
 export {default as JobDetailsMain}              from './JobDetailsMain/JobDetailsMain';
-export {default as CandidateProfileMain}        from './CandidateProfileMain/CandidateProfile';
+export {default as CandidateProfileMain}        from './CandidateProfileMain/CandidateProfileMain';
+export {default as CandidateProfileForm}        from './CandidateProfileForm/CandidateProfileForm';
+export {default as CandidatePersonal}           from './CandidatePersonal/CandidatePersonal';

@@ -1,0 +1,23 @@
+// styling top colored bar component
+// upper colored line
+.app__upper-colored-bar {
+  margin-bottom: 2rem;
+  .light-gray,
+  .red-color,
+  .dark-yellow {
+    height: 5px;
+  }
+  justify-content: flex-start;
+  .light-gray {
+    background-color: var(--light-gray);
+    flex: 1;
+  }
+  .red-color {
+    background-color: var(--red-color);
+    flex: 2;
+  }
+  .dark-yellow {
+    background-color: var(--dark-yellow);
+    flex: 1;
+  }
+}

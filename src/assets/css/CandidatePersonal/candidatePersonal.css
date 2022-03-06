@@ -1,0 +1,13 @@
+.app__candidate-profile-form__personal {
+  padding-bottom: 2rem;
+  border-bottom: var(--border);
+}
+
+.app__candidate-profile-form__name {
+  justify-content: space-between;
+}
+
+.app__candidate-profile-form__input-short {
+  border: var(--border);
+  width: 70%;
+}
