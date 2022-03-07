@@ -1,0 +1,18 @@
+// styling the Candidate contact container
+.app__candidate-profile-form__contact {
+  padding: 2rem 0;
+  border-bottom: var(--border);
+
+  // phone
+  .phone,
+  .social {
+    justify-content: flex-start;
+  }
+}
+
+.add-role {
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--red-color);
+  cursor: pointer;
+}

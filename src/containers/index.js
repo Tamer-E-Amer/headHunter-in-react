@@ -23,3 +23,4 @@ export {default as CandidateProfileForm}        from './CandidateProfileForm/Can
 export {default as CandidatePersonal}           from './CandidatePersonal/CandidatePersonal';
 export {default as CandidateLearning}           from './CandidateLearning/CandidateLearning';
 export {default as CandidateWorkExperience}     from './CandidateWorkExpereience/CandidateWorkExperience';
+export {default as CandidateContact}            from './CandidateContact/CandidateContact';

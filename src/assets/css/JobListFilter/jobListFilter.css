@@ -9,6 +9,9 @@
 }
 .app__job-list__search-filter__filter .filters input {
   margin-left: 1rem;
+  width: 20px;
+  height: 20px;
+  accent-color: var(--red-color);
 }
 .app__job-list__search-filter__filter .filters select {
   font-size: 1rem;

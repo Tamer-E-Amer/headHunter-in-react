@@ -7,32 +7,37 @@ import React from "react";
 import "../../assets/css/JobListFilter/jobListFilter.css";
 
 const JobListfilter = () => {
-
   return (
     <div className="app__job-list__search-filter__filter">
-        <h4>Filter by:</h4>
-        <div className="filters">
-            {/* location */}
-            <select name="location" id="location">
-                <option>Select Location</option>
-                <option value ="germany">Germany</option>
-                <option value="swizerland">Swizerland</option>
-                <option value="austria">Austria</option>
-            </select>
+      <h4>Filter by:</h4>
+      <div className="filters center">
+        {/* location */}
+        <select name="location" id="location">
+          <option>Select Location</option>
+          <option value="germany">Germany</option>
+          <option value="swizerland">Swizerland</option>
+          <option value="austria">Austria</option>
+        </select>
 
-            {/* job types */}
-            {/* fulltime */}
-            <input type="checkbox" name="fullTime" id="fullTime"/>
+        {/* job types */}
+        <div className="center">
+          {/* fulltime */}
+          <div className="center">
+            <input type="checkbox" name="fullTime" id="fullTime" />
             <label htmlFor="fullTime">Full time</label>
-
-            {/* part time */}
-            <input type="checkbox" name="partTime" id="partTime"/>
+          </div>
+          {/* part time */}
+          <div className="center">
+            <input type="checkbox" name="partTime" id="partTime" />
             <label htmlFor="partTime">Part time</label>
-
-            {/* students */}
-            <input type="checkbox" name="students" id="students"/>
+          </div>
+          {/* students */}
+          <div className="center">
+            <input type="checkbox" name="students" id="students" />
             <label htmlFor="students">Students</label>
+          </div>
         </div>
+      </div>
     </div>
   );
 };

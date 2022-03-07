@@ -3,7 +3,6 @@
   align-items: flex-start;
   padding: 1rem 4rem;
 }
-
-.benefits {
+.app__job-list__main .benefits {
   margin: 8rem 0;
 }

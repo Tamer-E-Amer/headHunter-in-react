@@ -1,0 +1,15 @@
+.app__candidate-profile-form__contact {
+  padding: 2rem 0;
+  border-bottom: var(--border);
+}
+.app__candidate-profile-form__contact .phone,
+.app__candidate-profile-form__contact .social {
+  justify-content: flex-start;
+}
+
+.add-role {
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--red-color);
+  cursor: pointer;
+}

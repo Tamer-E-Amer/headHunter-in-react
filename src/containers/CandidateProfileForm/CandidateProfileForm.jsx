@@ -11,12 +11,13 @@ import React from "react";
 //css
 import "../../assets/css/CandidateProfileForm/candidateProfileForm.css";
 //components
-import { TopColoredBar, InputField } from "../../components";
+import { TopColoredBar } from "../../components";
 // containers
 import {
   CandidatePersonal,
   CandidateLearning,
   CandidateWorkExperience,
+  CandidateContact,
 } from "../../containers";
 const CandidateProfileForm = () => {
   return (
@@ -25,6 +26,7 @@ const CandidateProfileForm = () => {
       <div>
         <form>
           <CandidatePersonal />
+          <CandidateContact />
           <CandidateLearning />
           <CandidateWorkExperience />
         </form>

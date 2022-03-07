@@ -19,3 +19,4 @@ export {default as TopColoredBar} from './TopColoredBar/TopColoredBar';
 export {default as RadioGroup} from './RadioGroup/RadioGroup';
 export {default as CheckBoxGroup} from './CheckBoxGroup/CheckBoxGroup';
 export {default as DegreeEntry} from './DegreeEntry/DegreeEntry';
+export {default as List} from './List/List';
