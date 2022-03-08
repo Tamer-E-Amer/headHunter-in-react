@@ -15,7 +15,8 @@ import { MdBusinessCenter } from "react-icons/md";
 import { IconContext } from "react-icons";
 // logo
 import logo from "../../images/logo.png";
-
+// router dom
+import { Link } from "react-router-dom";
 const Navbar = () => {
   // state that holds the navbar menubar
   const [isMenuToggle, setIsMenuToggle] = React.useState(false);
@@ -28,15 +29,17 @@ const Navbar = () => {
   // functional component for navbar menu
   const NavbarButtons = (props) => (
     <>
-      <li className="center active">
-        <IconContext.Provider
-          value={{ className: "alps-east__navbar__menu-buttons__icon" }}
-        >
-          <FaHome />
-        </IconContext.Provider>
-        {/* In order to Hide the name of the link in the Middle screen we need to check the value of the scrren is less than 700px and greater than 500 px */}
-        {(props.windowSize > 700 || props.windowSize <= 500) && "Home"}
-      </li>
+      <Link to="/">
+        <li className="center active">
+          <IconContext.Provider
+            value={{ className: "alps-east__navbar__menu-buttons__icon" }}
+          >
+            <FaHome />
+          </IconContext.Provider>
+          {/* In order to Hide the name of the link in the Middle screen we need to check the value of the scrren is less than 700px and greater than 500 px */}
+          {(props.windowSize > 700 || props.windowSize <= 500) && "Home"}
+        </li>
+      </Link>
       <li className="center">
         <IconContext.Provider
           value={{ className: "alps-east__navbar__menu-buttons__icon" }}
@@ -66,22 +69,26 @@ const Navbar = () => {
   // functional component for the login-sign in buttons
   const LogInSignInButtons = (props) => (
     <>
-      <li className="center">
-        <IconContext.Provider
-          value={{ className: "alps-east__navbar__menu-buttons__icon" }}
-        >
-          <FaSignInAlt />
-        </IconContext.Provider>
-        {(props.windowSize > 700 || props.windowSize <= 500) && "Login"}
-      </li>
-      <li className="center sign-up">
-        <IconContext.Provider
-          value={{ className: "alps-east__navbar__menu-buttons__icon" }}
-        >
-          <FaUsers />
-        </IconContext.Provider>
-        {(props.windowSize > 700 || props.windowSize <= 500) && "Sign Up"}
-      </li>
+      <Link to="/login">
+        <li className="center">
+          <IconContext.Provider
+            value={{ className: "alps-east__navbar__menu-buttons__icon" }}
+          >
+            <FaSignInAlt />
+          </IconContext.Provider>
+          {(props.windowSize > 700 || props.windowSize <= 500) && "Login"}
+        </li>
+      </Link>
+      <Link to="/register">
+        <li className="center sign-up">
+          <IconContext.Provider
+            value={{ className: "alps-east__navbar__menu-buttons__icon" }}
+          >
+            <FaUsers />
+          </IconContext.Provider>
+          {(props.windowSize > 700 || props.windowSize <= 500) && "Sign Up"}
+        </li>
+      </Link>
     </>
   );
   // handle bar menu toggle
@@ -121,7 +128,9 @@ const Navbar = () => {
       className={isScroll ? "alps-east__navbar fixed " : "alps-east__navbar"}
     >
       {/* logo */}
-      <img src={logo} alt="logo" className="alps-east__navbar__logo" />
+      <Link to="/">
+        <img src={logo} alt="logo" className="alps-east__navbar__logo" />
+      </Link>
       {/* navbar Buttons from functional component */}
       <ul className="alps-east__navbar__menu-buttons center">
         <NavbarButtons windowSize={windowSize} />

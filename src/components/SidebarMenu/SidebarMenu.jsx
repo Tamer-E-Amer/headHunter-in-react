@@ -6,6 +6,8 @@ import {
   employerSideBarMenu,
   candidateSideBarMenu,
 } from "../../data/SidebarMenu";
+// router dom
+import { Link } from "react-router-dom";
 const SidebarMenu = (props) => {
   //   console.log(employerSideBarMenu);
   // get candidate sideBarMenu
@@ -29,7 +31,7 @@ const SidebarMenu = (props) => {
     // test the color of the sidebar menu item
     const color = item.color;
     let backColorClass = "";
-    console.log(color);
+    // console.log(color);
     switch (color) {
       case "#9f9a9a":
         backColorClass = "light-gray";
@@ -53,9 +55,11 @@ const SidebarMenu = (props) => {
         <div
           className={`app__contact-alps-east__side-bar__left-border ${backColorClass}`}
         ></div>
-        <div className="app__contact-alps-east__side-bar__text">
-          {item.text}
-        </div>
+        <Link to={item.link}>
+          <div className="app__contact-alps-east__side-bar__text">
+            {item.text}
+          </div>
+        </Link>
       </div>
     );
   });
