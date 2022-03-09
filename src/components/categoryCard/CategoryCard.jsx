@@ -9,27 +9,30 @@
 import React from "react";
 //css
 import "./categoryCard.css";
-
+// raect router dom
+import { Link } from "react-router-dom";
 const CategoryCard = (props) => {
   return (
-    <div className="alps-east__service__category-card center">
-      {/* catrgory card icon */}
-      {props.data.Icon}
-      <p className="alps-east__service__category-card__title">
-        {/* category name */}
-        {props.data.category}
-      </p>
-      <p className="alps-east__service__category-card__position-count">
-        {/* opening positions count */}
-        <span className="number">{props.data.positions}</span>{" "}
-        <span className="count-for-what">Opening positions</span>
-      </p>
-      <p className="alps-east__service__category-card__company-count">
-        {/* company count */}
-        <span className="number">{props.data.companies}</span>{" "}
-        <span className="count-for-what">Employers</span>
-      </p>
-    </div>
+    <Link to={`/jobList/${props.data.category}`}>
+      <div className="alps-east__service__category-card center">
+        {/* catrgory card icon */}
+        {props.data.Icon}
+        <p className="alps-east__service__category-card__title">
+          {/* category name */}
+          {props.data.category}
+        </p>
+        <p className="alps-east__service__category-card__position-count">
+          {/* opening positions count */}
+          <span className="number">{props.data.positions}</span>{" "}
+          <span className="count-for-what">Opening positions</span>
+        </p>
+        <p className="alps-east__service__category-card__company-count">
+          {/* company count */}
+          <span className="number">{props.data.companies}</span>{" "}
+          <span className="count-for-what">Employers</span>
+        </p>
+      </div>
+    </Link>
   );
 };
 

@@ -6,3 +6,11 @@
 .app__job-list__main .benefits {
   margin: 8rem 0;
 }
+.app__job-list__main span {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 98%;
+  color: var(--dark-gray);
+  font-weight: 450;
+}

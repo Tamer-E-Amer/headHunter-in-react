@@ -1,8 +1,10 @@
 /**
  * @description this reusable component is used to show some information about a job that is shown in job list container
+ * @param {Object}  :jobData       - details of the job
+ * @param {String}  :categoryInURL - the category of the job list that appears in URl i.e:localhost/jobList/engineering
  */
-import React from "react";
 
+import React from "react";
 //css
 import "../../assets/css/JobItem/jobItem.css";
 //icons
@@ -11,17 +13,18 @@ import {
   MdBusinessCenter,
   MdOutlineAvTimer,
 } from "react-icons/md";
-const JobItem = (props) => {
-  //test code ///// calculating the date difference to be i.e 3 days ago
-  let currentDate = new Date();
-  // let currentDate = date.getDate();
-  console.log(currentDate.setDate(currentDate));
 
+// react-router-dom
+import { Link } from "react-router-dom";
+// props are : jobData - categoryURL
+const JobItem = (props) => {
   return (
     <div className="app__job-list__job-item">
       <div className="app__job-list__job-item__job-header center">
         {/* job title */}
-        <h3 className="title">{props.jobData.jobTitle}</h3>
+        <Link to="/jobDetails/987987897979">
+          <h3 className="title">{props.jobData.title}</h3>
+        </Link>
         <div className="app__job-list__job-item__loc-type-date center">
           <div className="location center">
             {/* icon */}

@@ -28,6 +28,7 @@
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  color: var(--dark-gray);
 }
 .alps-east__service__login-button:hover {
   transform: scaleX(103%);

@@ -53,6 +53,9 @@
   position: relative;
   width: 100%;
 }
+.alps-east__navbar a {
+  height: 100%;
+}
 /* test scroll */
 .alps-east__navbar.fixed {
   position: fixed;

@@ -9,7 +9,8 @@
 import React from "react";
 //css
 import "./userType.css";
-//data
+// react router rom
+import { Link } from "react-router-dom";
 const UserType = (props) => {
   return (
     // assign background color of the component according to the user type
@@ -26,10 +27,17 @@ const UserType = (props) => {
         {props.data.componentText}
       </p>
       <div className=" alps-east__service__user-type__button-container center">
-        <div className="alps-east__service__login-button center">Login</div>
-        <span>
-          <a href="#">I do not have an account</a>
-        </span>
+        {/* link to login form */}
+        <Link to="/login">
+          <div className="alps-east__service__login-button center">Login</div>
+        </Link>
+
+        {/* link to register page */}
+        <Link to="/register">
+          <span>
+            <a href="#">I do not have an account</a>
+          </span>
+        </Link>
       </div>
     </div>
   );

@@ -4,11 +4,22 @@ import './app.css';
 // Pages
 import { HomePage, Login, Register,ContactAlpsEast, Messages, CompanyProfile,PostJob, JobList, JobDetails, CandidateProfile} from "./pages";
 // react router dom
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
+
+// scrolling page to the top after link to other page 
+export function ScrollToTop(){
+  const pathName = useLocation();
+  React.useEffect(()=>{
+    window.scrollTo(0,0,);
+  },[pathName]);
+
+  return null;
+}
 const App = () => {
   return (
     // setting the page routers
         <Router>
+          <ScrollToTop/>
           <Routes>
             {/* Home page */}
             <Route path="/" element={<HomePage/>}/>

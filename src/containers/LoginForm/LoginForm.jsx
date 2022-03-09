@@ -41,6 +41,7 @@ const LoginForm = () => {
             id="userName"
             htmlFor="userName"
             labelText="User name"
+            direction="col"
             placeHolder="User name"
             className="app__login-wrapper__login-form__input"
             onChange={onChangeHandler}
@@ -54,6 +55,7 @@ const LoginForm = () => {
             labelText="Password"
             placeHolder="Password"
             className="app__login-wrapper__login-form__input"
+            direction="col"
             onChange={onChangeHandler}
           />
           <RedButton

@@ -39,6 +39,10 @@
 .app__job-list__job-item__job-header .date div {
   margin-left: 0.5rem;
 }
+.app__job-list__job-item__job-header a {
+  display: inline-block;
+  width: 100%;
+}
 
 .app__job-list__job-item__job-body {
   margin: 1rem 0;
