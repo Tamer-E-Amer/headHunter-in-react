@@ -13,32 +13,49 @@ import {
   RedButton,
   AlpsEastBenefits,
 } from "../../components";
+// axios request
+import { publicRequest } from "../../requestMethods";
 
-// import all jobs
-import { jobs } from "../../data/jobs";
 const JobDetailsMain = (props) => {
+  // get the jobid in the URL
+  const [jobDetail, setJobDetail] = React.useState({
+    yourRoles: [],
+    requirements: [],
+    weOffer: [],
+    place: {},
+  });
+  // get the job details from API using axios
+  React.useEffect(() => {
+    const getJobDetails = async () => {
+      try {
+        const res = await publicRequest.get(
+          `jobPosition/find/${props.jobIDInURL}`
+        );
+        setJobDetail(res.data);
+      } catch (error) {}
+    };
+    getJobDetails();
+  }, [props.jobIDInURL]);
   // getting the job details according to the passed jobId
-  const job = jobs.filter((job) => job.id === props.jobId);
   // getting job roles
-  const jobRoles = job[0].yourRoles.map((role) => {
-    return <DottedList listItem={role} />;
+  const jobRoles = jobDetail.yourRoles.map((role, index) => {
+    return <DottedList listItem={role} key={index} />;
   });
   //getting job requirements
-  const jobRequirements = job[0].requirements.map((req) => {
-    return <DottedList listItem={req} />;
+  const jobRequirements = jobDetail.requirements.map((req, index) => {
+    return <DottedList listItem={req} key={index} />;
   });
   //getting job benefits
-  const jobBenefits = job[0].weOffer.map((offer) => {
-    return <DottedList listItem={offer} />;
+  const jobBenefits = jobDetail.weOffer.map((offer, index) => {
+    return <DottedList listItem={offer} key={index} />;
   });
 
-  // console.log("job roles", jobRoles);
   return (
     <>
       <div className="app__job-details-main center">
         <div className="app__job-details-main__details">
           {/* details of a certain Job */}
-          <JobItem jobData={job[0]} />
+          <JobItem jobData={jobDetail} />
           {/* your roles */}
           <div className="list">
             <h3 className="title">Your roles</h3>

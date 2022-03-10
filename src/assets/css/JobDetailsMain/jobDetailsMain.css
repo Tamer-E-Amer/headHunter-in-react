@@ -11,6 +11,7 @@
 }
 .app__job-details-main__details .list {
   color: var(--dark-gray);
+  padding-left: 0.5rem;
 }
 
 .app__job-details-main__benefits-suggestion {

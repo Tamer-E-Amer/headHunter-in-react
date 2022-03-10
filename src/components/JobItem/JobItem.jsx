@@ -22,7 +22,7 @@ const JobItem = (props) => {
     <div className="app__job-list__job-item">
       <div className="app__job-list__job-item__job-header center">
         {/* job title */}
-        <Link to="/jobDetails/987987897979">
+        <Link to={`/jobDetails/${props.jobData._id}`}>
           <h3 className="title">{props.jobData.title}</h3>
         </Link>
         <div className="app__job-list__job-item__loc-type-date center">
