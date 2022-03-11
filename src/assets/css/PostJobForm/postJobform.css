@@ -26,11 +26,11 @@
 }
 
 .app__job-post-form__input-work-place {
-  width: 100%;
+  width: 30%;
 }
 
 .app__job-post-form__input-salary {
-  width: 100%;
+  width: 20%;
 }
 
 .app__post-Job-form__input-radio {
@@ -57,18 +57,4 @@
 .app__post-job__form__button {
   height: 50px;
   width: 250px;
-}
-
-.app__post-job__form__business-field {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 1rem 0;
-}
-.app__post-job__form__business-field .biusiness-field-label {
-  width: 85px;
-  margin: 0 0.5rem;
-}
-.app__post-job__form__business-field .business-field-radio-group {
-  flex: 1;
 }

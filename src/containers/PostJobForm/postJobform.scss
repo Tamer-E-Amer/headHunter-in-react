@@ -33,11 +33,12 @@
 
 // work place
 .app__job-post-form__input-work-place {
-  width: 100%;
+  width: 30%;
 }
 //salary
 .app__job-post-form__input-salary {
-  width: 100%;
+  width: 20%;
+  // margin: 0 0.5rem;
 }
 // radio button
 .app__post-Job-form__input-radio {
@@ -68,19 +69,19 @@
   width: 250px;
 }
 
-//  business field radio group
-.app__post-job__form__business-field {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 1rem 0;
-  //business field label
-  .biusiness-field-label {
-    width: 85px;
-    margin: 0 0.5rem;
-  }
-  //radio group
-  .business-field-radio-group {
-    flex: 1;
-  }
-}
+// //  business field radio group
+// .app__post-job__form__business-field {
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-start;
+//   margin: 1rem 0;
+//   //business field label
+//   .biusiness-field-label {
+//     width: 85px;
+//     margin: 0 0.5rem;
+//   }
+//   //radio group
+//   .business-field-radio-group {
+//     flex: 1;
+//   }
+// }

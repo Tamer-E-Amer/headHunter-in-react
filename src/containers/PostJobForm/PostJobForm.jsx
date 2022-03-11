@@ -7,7 +7,7 @@ import "../../assets/css/PostJobForm/postJobform.css";
 //icons
 import { MdAddBox } from "react-icons/md";
 // components
-import { InputField, RedButton, TextField } from "../../components";
+import { InputField, RedButton, TextField, RadioGroup } from "../../components";
 
 const PostJobForm = () => {
   return (
@@ -37,157 +37,55 @@ const PostJobForm = () => {
         />
 
         {/* Job field  */}
-        <div className="app__company-profile__form__business-field">
-          <div className="biusiness-field-label">Business</div>
-          <div className="business-field-radio-group">
-            {/* business field radio group */}
-
-            <div className="center">
-              <InputField
-                type="radio"
-                name="businessField"
-                value="engineering"
-                id="engineering"
-                htmlFor="engineering"
-                labelText="engineering"
-                placeHolder=""
-                className="app__post-Job-form__input-radio"
-                direction="col"
-                labelClass=""
-                // checked={companyProfileData.businessField === "engineering"}
-                // onChange={onChangeHandler}
-              />
-              <InputField
-                type="radio"
-                name="businessField"
-                value="IT"
-                id="IT"
-                htmlFor="IT"
-                labelText="IT"
-                placeHolder=""
-                className="app__post-Job-form__input-radio"
-                direction="col"
-                labelClass=""
-                // checked={companyProfileData.businessField === "IT"}
-                // onChange={onChangeHandler}
-              />
-              <InputField
-                type="radio"
-                name="businessField"
-                value="medicine"
-                id="medicine"
-                htmlFor="medicine"
-                labelText="Medicine"
-                placeHolder=""
-                className="app__post-Job-form__input-radio"
-                direction="col"
-                labelClass=""
-                // checked={companyProfileData.businessField === "medicine"}
-                // onChange={onChangeHandler}
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* job type */}
-        <div className="app__company-profile__form__business-field">
-          <div className="biusiness-field-label">Job Type</div>
-          <div className="business-field-radio-group">
-            {/* business field radio group */}
-            <div className="center">
-              <InputField
-                type="radio"
-                name="jobType"
-                value="Full time"
-                id="fullTime"
-                htmlFor="fullTime"
-                labelText="Full time"
-                placeHolder=""
-                className="app__post-Job-form__input-radio"
-                direction="col"
-                // checked={companyProfileData.businessField === "engineering"}
-                // onChange={onChangeHandler}
-              />
-              <InputField
-                type="radio"
-                name="jobType"
-                value="part Time"
-                id="partTime"
-                htmlFor="partTime"
-                labelText="Part time"
-                placeHolder=""
-                className="app__post-Job-form__input-radio"
-                direction="col"
-                // checked={companyProfileData.businessField === "IT"}
-                // onChange={onChangeHandler}
-              />
-              <InputField
-                type="radio"
-                name="jobType"
-                value="remote"
-                id="remote"
-                htmlFor="remote"
-                labelText="Remote"
-                placeHolder=""
-                className="app__post-Job-form__input-radio"
-                direction="col"
-                labelClass=""
-                // checked={companyProfileData.businessField === "medicine"}
-                // onChange={onChangeHandler}
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* place */}
-        <InputField
-          type="text"
-          name="place"
-          // value={companyProfileData.companyTitle} //// making the React state is the single value of truth
-          id="place"
-          htmlFor="place"
-          labelText="Place"
-          placeHolder="Place of work"
-          className="app__job-post-form__input-work-place"
-          direction="col"
-          // onChange={onChangeHandler}
+        <RadioGroup
+          radioItems={["Engineering", "IT", "Medicine"]}
+          name="jobField"
+          title="Job Field"
+        />
+        {/* Job Type  */}
+        <RadioGroup
+          radioItems={["Full time", "Part time", "Remote"]}
+          name="jobType"
+          title="Job Type"
         />
 
-        {/* status */}
-        <div className="app__company-profile__form__business-field">
-          <div className="biusiness-field-label">Job Type</div>
-          <div className="business-field-radio-group">
-            {/* business field radio group */}
-            <div className="center">
-              <InputField
-                type="radio"
-                name="status"
-                value="opened"
-                id="opened"
-                htmlFor="opened"
-                labelText="Opened"
-                placeHolder=""
-                className="app__post-Job-form__input-radio"
-                direction="col"
-                // checked={companyProfileData.businessField === "engineering"}
-                // onChange={onChangeHandler}
-              />
-              <InputField
-                type="radio"
-                name="status"
-                value="Closed"
-                id="closed"
-                htmlFor="closed"
-                labelText="Closed"
-                placeHolder=""
-                className="app__post-Job-form__input-radio"
-                direction="col"
-                // checked={companyProfileData.businessField === "IT"}
-                // onChange={onChangeHandler}
-              />
-            </div>
-          </div>
+        {/* test place city state - style as the first name and last name in candidate profile form*/}
+        <div className="app__candidate-profile-form__name center">
+          <InputField
+            type="text"
+            name="city"
+            // value={companyProfileData.companyTitle} //// making the React state is the single value of truth
+            id="city"
+            htmlFor="city"
+            labelText="City"
+            placeHolder="City"
+            className="app__candidate-profile-form__input-short"
+            direction="col"
+            labelClass="app__candidate-profile-form__input-label"
+            // onChange={onChangeHandler}
+          />
+          {/* state */}
+          <InputField
+            type="text"
+            name="state"
+            // value={companyProfileData.companyTitle} //// making the React state is the single value of truth
+            id="state"
+            htmlFor="state"
+            labelText="State"
+            placeHolder="State"
+            className="app__candidate-profile-form__input-short"
+            direction="col"
+            // labelClass="app__candidate-profile-form__input-label"
+            // onChange={onChangeHandler}
+          />
         </div>
+
+        {/* Status */}
+        <RadioGroup
+          radioItems={["Opened", "Closed"]}
+          name="status"
+          title="Status"
+        />
 
         {/* salary */}
         <InputField

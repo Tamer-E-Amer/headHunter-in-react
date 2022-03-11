@@ -24,6 +24,7 @@ const CandidatePersonal = () => {
           labelClass="app__candidate-profile-form__input-label"
           // onChange={onChangeHandler}
         />
+        {/* last name */}
         <InputField
           type="text"
           name="LastName"
