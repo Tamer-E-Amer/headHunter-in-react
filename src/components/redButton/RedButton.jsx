@@ -9,7 +9,10 @@ import React from "react";
 import "./redButton.css";
 const RedButton = (props) => {
   return (
-    <button className={`alps-east__red-button ${props.className}`}>
+    <button
+      className={`alps-east__red-button ${props.className}`}
+      onClick={props.onClick}
+    >
       {props.text}
     </button>
   );

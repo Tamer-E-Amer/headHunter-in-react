@@ -1,8 +1,9 @@
 /**
  * @description this component deiplay a set of radio button as a group
- * - @params {Array}    - radioItems : array that define the name, id and title of the input radio
- * - @params {text}     - name  : name of the radio group - will be used later in the form logic
- * - @params {text}     - title : title of the radio group
+ * - @params {Array}    - radioItems    : array that define the name, id and title of the input radio
+ * - @params {text}     - name          : name of the radio group - will be used later in the form logic
+ * - @params {text}     - title         : title of the radio group
+ * - @params {text}     - onChange      : onChange -onChange event of the radio button
  *
  */
 
@@ -15,7 +16,14 @@ const RadioGroup = (props) => {
   const radio = props.radioItems.map((item) => {
     return (
       <div key={item} className="app__radio-group center">
-        <input type="radio" name={props.name} id={item} value={item} />
+        <input
+          type="radio"
+          name={props.name}
+          id={item}
+          value={item}
+          onChange={props.onChange}
+          checked={props.checked === item}
+        />
         <label htmlFor={item}>{item}</label>
       </div>
     );

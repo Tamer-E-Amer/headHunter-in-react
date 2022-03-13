@@ -29,6 +29,7 @@
 .app__job-post-form__input {
   border: var(--border);
   width: 100%;
+  font-size: 1rem;
 }
 
 // work place
@@ -51,16 +52,16 @@
   justify-content: flex-start;
   width: 98%;
   //add button
-  .add-button {
+  .del-button {
     cursor: pointer;
     margin-left: 10px;
     &:hover {
-      background-color: var(--light-gray);
+      border: 1px solid var(--light-gray);
     }
   }
 }
 .app__post-job-form__add-role-field {
-  height: 90px;
+  height: 70px;
 }
 
 // sending button
@@ -69,19 +70,13 @@
   width: 250px;
 }
 
-// //  business field radio group
-// .app__post-job__form__business-field {
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-start;
-//   margin: 1rem 0;
-//   //business field label
-//   .biusiness-field-label {
-//     width: 85px;
-//     margin: 0 0.5rem;
-//   }
-//   //radio group
-//   .business-field-radio-group {
-//     flex: 1;
-//   }
-// }
+.app__post-job-form__add-role__button {
+  justify-content: flex-end;
+  padding: 0 4.5rem;
+  button {
+    height: 40px;
+    background-color: var(--dark-gray);
+    font-size: 1.2rem;
+    padding: 0;
+  }
+}
