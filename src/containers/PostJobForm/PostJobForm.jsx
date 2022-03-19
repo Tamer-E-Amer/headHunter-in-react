@@ -10,22 +10,32 @@ import { MdClear } from "react-icons/md";
 import { InputField, RedButton, TextField, RadioGroup } from "../../components";
 
 const PostJobForm = () => {
+  /**********************************************************************************************
+   *                          Default Values
+   **********************************************************************************************/
   // default values for the place data state
   const placeDataDefaultValues = {
     city: "",
     state: "",
   };
 
-  // roles default sate
+  // roles default values
   const rolesDefaultValues = [{ role: "" }];
+
+  // requirements default values
+  const requirementsDefaultValues = [{ req: "" }];
+
+  // offers default values
+  const offersDefaultValues = [{ offer: "" }];
+
   // default values for the form data state
   const jobDataDefaultValues = {
     title: "",
     description: "",
     jobType: "",
     yourRoles: rolesDefaultValues,
-    requirements: [],
-    weOffer: [],
+    requirements: requirementsDefaultValues,
+    weOffer: offersDefaultValues,
     salary: "",
     jobField: [],
     company: "",
@@ -33,22 +43,17 @@ const PostJobForm = () => {
     status: "",
     validTo: "",
   };
-  // state for postJob data
+  /**********************************************************************************************
+   *                          state declaration
+   **********************************************************************************************/
   const [postJobData, setPostJobData] = React.useState(jobDataDefaultValues);
 
   // destructing postJobData
-  const {
-    title,
-    description,
-    salary,
-    validTo,
-    jobType,
-    status,
-    jobField,
-    yourRoles,
-  } = postJobData;
+  const { title, description, salary, validTo, jobType, status, jobField } =
+    postJobData;
   // destructing place
   const { city, state } = postJobData.place;
+
   // on change for add role text input
   const onChangeHandler = (e) => {
     const { name, value, type, checked } = e.target;
@@ -83,7 +88,7 @@ const PostJobForm = () => {
     setPostJobData((prev) => {
       return {
         ...prev,
-        roles,
+        yourRoles: roles,
       };
     });
     // console.log(index, e.target.name);
@@ -109,7 +114,80 @@ const PostJobForm = () => {
         yourRoles: rolesClone,
       };
     });
-    // console.log("delete");
+  };
+
+  /// test offer
+  // roles change handler
+  const offerChangeHandler = (index, e) => {
+    const { name, value } = e.target;
+    const offers = [...postJobData.weOffer];
+    offers[index][name] = value;
+    setPostJobData((prev) => {
+      return {
+        ...prev,
+        weOffer: offers,
+      };
+    });
+    // console.log(index, e.target.name);
+  };
+
+  // add roles handler
+  const addOfferHandler = () => {
+    setPostJobData((prev) => {
+      return {
+        ...prev,
+        weOffer: [...prev.weOffer, offersDefaultValues],
+      };
+    });
+  };
+
+  // delet role handler
+  const delOfferHandler = (index) => {
+    const offersClone = [...postJobData.weOffer];
+    offersClone.splice(index, 1);
+    setPostJobData((prev) => {
+      return {
+        ...prev,
+        weOffer: offersClone,
+      };
+    });
+  };
+  /**********************************************************************************************
+   *                          requirements logic
+   **********************************************************************************************/
+  // requirements change handler
+  const reqsChangeHandler = (index, e) => {
+    const { name, value } = e.target;
+    const reqs = [...postJobData.requirements];
+    reqs[index][name] = value;
+    setPostJobData((prev) => {
+      return {
+        ...prev,
+        requirements: reqs,
+      };
+    });
+    // console.log(index, e.target.name);
+  };
+  // add requirement handler
+  const addReqHandler = () => {
+    setPostJobData((prev) => {
+      return {
+        ...prev,
+        requirements: [...prev.requirements, requirementsDefaultValues],
+      };
+    });
+  };
+
+  // delet requirement handler
+  const delReqHandler = (index) => {
+    const reqsClone = [...postJobData.requirements];
+    reqsClone.splice(index, 1);
+    setPostJobData((prev) => {
+      return {
+        ...prev,
+        requirements: reqsClone,
+      };
+    });
   };
   // from submit handler
   const formSubmitHandler = (event) => {
@@ -255,7 +333,7 @@ const PostJobForm = () => {
               <div className="app__post-job-form__add-role__button center">
                 {/* add roel button */}
                 <RedButton
-                  text="Add Role"
+                  text="new Role"
                   className="app__post-job-form__add-role__button"
                   onClick={addRoleHandler}
                 />
@@ -264,35 +342,89 @@ const PostJobForm = () => {
           </div>
         ))}
 
-        {/* requirements */}
-        <div className="app__post-job-form__add-role center">
-          <TextField
-            labelText="Requirements"
-            name="requirements"
-            //   value={companyProfileData.about}
-            id="requirements"
-            placeHolder="Enter Job requirements"
-            className="app__post-job-form__add-role-field"
-            //   onChange={onChangeHandler}
-          />
-          {/* add button */}
-          <MdClear size={30} color={"#a71717"} className="del-button" />
-        </div>
+        {/* job requirements */}
+        {/* mapping through requirements */}
+
+        {postJobData.requirements.map((req, index) => (
+          <div key={index}>
+            <div className="app__post-job-form__add-role center">
+              <TextField
+                labelText="Requirements"
+                name="req"
+                value={req.requrement}
+                id="req"
+                placeHolder="Enter Job requirement"
+                className="app__post-job-form__add-role-field"
+                onChange={(e) => {
+                  reqsChangeHandler(index, e);
+                }}
+              />
+              {/* delte requirement button */}
+              {postJobData.requirements.length > 1 && (
+                <MdClear
+                  size={30}
+                  color={"#a71717"}
+                  className="del-button"
+                  onClick={() => {
+                    delReqHandler(index);
+                  }}
+                />
+              )}
+            </div>
+            {postJobData.requirements.length - 1 === index && (
+              <div className="app__post-job-form__add-role__button center">
+                {/* add roel button */}
+                <RedButton
+                  text="new Requirment"
+                  className="app__post-job-form__add-role__button"
+                  onClick={addReqHandler}
+                />
+              </div>
+            )}
+          </div>
+        ))}
 
         {/* offers */}
-        <div className="app__post-job-form__add-role center">
-          <TextField
-            labelText="We offer"
-            name="offers"
-            //   value={companyProfileData.about}
-            id="offers"
-            placeHolder="Enter Job offer"
-            className="app__post-job-form__add-role-field"
-            //   onChange={onChangeHandler}
-          />
-          {/* add button */}
-          <MdClear size={30} color={"#a71717"} className="del-button" />
-        </div>
+        {/* mapping through offers */}
+
+        {postJobData.weOffer.map((offer, index) => (
+          <div key={index}>
+            <div className="app__post-job-form__add-role center">
+              <TextField
+                labelText="Offers"
+                name="offer"
+                value={offer.offer}
+                id="offer"
+                placeHolder="Enter Job offer"
+                className="app__post-job-form__add-role-field"
+                onChange={(e) => {
+                  offerChangeHandler(index, e);
+                }}
+              />
+              {/* delte offer button */}
+              {postJobData.weOffer.length > 1 && (
+                <MdClear
+                  size={30}
+                  color={"#a71717"}
+                  className="del-button"
+                  onClick={() => {
+                    delOfferHandler(index);
+                  }}
+                />
+              )}
+            </div>
+            {postJobData.weOffer.length - 1 === index && (
+              <div className="app__post-job-form__add-role__button center">
+                {/* add offer button */}
+                <RedButton
+                  text="new Offer"
+                  className="app__post-job-form__add-role__button"
+                  onClick={addOfferHandler}
+                />
+              </div>
+            )}
+          </div>
+        ))}
 
         {/* valid to */}
         <InputField
