@@ -240,7 +240,7 @@ const CandidateContact = ({
         className="app__candidate-profile-form__input"
         direction="col"
         // labelClass="app__candidate-profile-form__input-label"
-        // onChange={onChangeHandler}
+        onChange={onChangeHandler}
       />
     </div>
   );
