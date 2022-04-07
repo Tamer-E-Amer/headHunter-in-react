@@ -78,7 +78,7 @@ const RegisterForm = () => {
           <InputField
             type="password"
             name="passwordConfirm"
-            value={registerData.password} //// making the React state is the single value of truth
+            value={registerData.passwordConfirm} //// making the React state is the single value of truth
             id="passwordConfirm"
             htmlFor="passwordConfirm"
             labelText="Confirm password"
