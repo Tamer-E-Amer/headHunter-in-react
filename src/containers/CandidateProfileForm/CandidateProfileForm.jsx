@@ -20,13 +20,91 @@ import {
   CandidateContact,
 } from "../../containers";
 const CandidateProfileForm = () => {
+  /**************************************************************************************************************
+   *                                            Default values
+   *************************************************************************************************************/
+  const personalDataDefaultValues = {
+    firstName: "",
+    lastName: "",
+    gender: "Male",
+    birthDate: "",
+    image: "",
+  };
+
+  const phoneDefaultValues = [{ type: "mobile", number: "01022708717" }];
+  const socialDefaultValues = [{ type: "", link: "" }];
+
+  const contactDataDefaultValues = {
+    email: "tamer@gmail.com",
+    phone: phoneDefaultValues,
+    social: socialDefaultValues,
+    skype: "",
+  };
+
+  // complete state data
+  const CandidateDefaultData = {
+    candidatePersonalData: personalDataDefaultValues,
+    candidateContactData: contactDataDefaultValues,
+  };
+
+  /**************************************************************************************************************
+   *                                           User profile state
+   *************************************************************************************************************/
+  const [candidateData, setCandidateData] =
+    React.useState(CandidateDefaultData);
+
+  // change Handler
+  const onChangeHandler = (e) => {
+    const { name, value, type, checked } = e.target;
+    setCandidateData((prev) => {
+      return {
+        ...prev,
+        candidatePersonalData: {
+          ...prev.candidatePersonalData,
+          [name]: type === "checkbox" ? checked : value,
+        },
+      };
+    });
+    console.log(`${name} : ${value}`);
+  };
+
+  // change handler for contact data
+  const onChangeHandler_contactData = (e) => {
+    const { name, value, type, checked } = e.target;
+    setCandidateData((prev) => {
+      return {
+        ...prev,
+        candidateContactData: {
+          ...prev.candidateContactData,
+          [name]: type === "checkbox" ? checked : value,
+        },
+      };
+    });
+    console.log(`${name} : ${value}`);
+  };
+
+  // submit form
+  const onsubmitHandler = (e) => {
+    e.preventDefault();
+    console.log(candidateData);
+  };
+
   return (
     <div>
       <TopColoredBar />
       <div>
-        <form>
-          <CandidatePersonal />
-          <CandidateContact />
+        <form onSubmit={onsubmitHandler}>
+          <CandidatePersonal
+            personalData={candidateData.candidatePersonalData}
+            onChangeHandler={onChangeHandler}
+          />
+          <CandidateContact
+            contactData={candidateData.candidateContactData}
+            setCandidateData={setCandidateData}
+            phoneDefaultValues={phoneDefaultValues}
+            socialDefaultValues={socialDefaultValues}
+            onChangeHandler={onChangeHandler_contactData}
+          />
           <CandidateLearning />
           <CandidateWorkExperience />
         </form>

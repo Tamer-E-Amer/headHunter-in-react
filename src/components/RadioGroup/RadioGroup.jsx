@@ -13,16 +13,16 @@ import "../../assets/css/RadioGroup/radioGroup.css";
 const RadioGroup = (props) => {
   // radio items
 
-  const radio = props.radioItems.map((item) => {
+  const radio = props.radioItems.map((item, index) => {
     return (
-      <div key={item} className="app__radio-group center">
+      <div key={index} className="app__radio-group center">
         <input
           type="radio"
           name={props.name}
           id={item}
           value={item}
           onChange={props.onChange}
-          checked={props.checked === item}
+          checked={props.gender === item}
         />
         <label htmlFor={item}>{item}</label>
       </div>

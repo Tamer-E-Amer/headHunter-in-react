@@ -12,13 +12,18 @@ import React from "react";
 import "../../assets/css/List/list.css";
 const List = (props) => {
   // getting the list items
-  const items = props.items.map((item) => {
-    return <option>{item}</option>;
+  const items = props.items.map((item, index) => {
+    return <option key={index}>{item}</option>;
   });
   return (
     <div className="app__list center">
       <div className="label">{props.label}</div>
-      <select name={props.idName} id={props.idName}>
+      <select
+        name={props.idName}
+        id={props.idName}
+        value={props.value}
+        onChange={props.onChange}
+      >
         {items}
       </select>
     </div>
