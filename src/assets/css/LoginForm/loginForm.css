@@ -39,3 +39,11 @@
   height: 40px;
   font-size: 1.3rem;
 }
+
+@media (max-width: 450px) {
+  .app__login-wrapper__login-title {
+    font-size: 1rem !important;
+    font-weight: 500;
+    padding: 0 0.5rem;
+  }
+}

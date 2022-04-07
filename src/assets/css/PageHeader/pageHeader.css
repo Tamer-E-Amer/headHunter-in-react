@@ -14,3 +14,17 @@
   font-weight: 500;
   color: var(--dark-gray);
 }
+
+@media (max-width: 700px) {
+  .regsiter__header img {
+    width: 244px;
+  }
+  .regsiter__header div {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .regsiter__header div {
+    display: none;
+  }
+}

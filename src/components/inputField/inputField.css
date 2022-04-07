@@ -41,3 +41,21 @@
   font-weight: 400;
   /* width: 100px; */
 }
+
+/* media queries */
+@media (max-width: 450px) {
+  /*  */
+  .alps-east__input-field-row-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 0;
+  }
+
+  .alps-east__input-field__label-horizontal {
+    margin: 0;
+  }
+
+  .alps-east__input-field {
+    font-size: 1rem;
+  }
+}

@@ -18,3 +18,26 @@
     color: var(--dark-gray);
   }
 }
+
+// media queries
+
+@media (max-width: 700px) {
+  .regsiter__header {
+    // resizing header image
+    img {
+      width: 244px;
+    }
+
+    // resiziing header text
+    div {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .regsiter__header {
+    div {
+      display: none;
+    }
+  }
+}
