@@ -31,8 +31,8 @@ const CandidateProfileForm = () => {
     image: "",
   };
 
-  const phoneDefaultValues = [{ type: "mobile", number: "01022708717" }];
-  const socialDefaultValues = [{ type: "", link: "" }];
+  const phoneDefaultValues = [{ type: "", number: "" }];
+  const socialDefaultValues = [{ netName: "", link: "" }];
 
   const contactDataDefaultValues = {
     email: "tamer@gmail.com",

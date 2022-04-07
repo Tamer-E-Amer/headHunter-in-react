@@ -61,6 +61,23 @@ const CandidateContact = ({
   };
 
   ///////////////////// social links logic/////////////////////
+  const onChangeHandler_contactData_social = (e, index) => {
+    const { name, value } = e.target;
+    const socialLinks = [...contactData.social];
+    socialLinks[index][name] = value;
+    setCandidateData((prev) => {
+      return {
+        ...prev,
+        candidateContactData: {
+          ...prev.candidateContactData,
+          social: socialLinks,
+        },
+      };
+    });
+    // console.log(index, e.target.name);
+    console.log(`${name} : ${value}`);
+  };
+
   // add social link
   const addSocialHandler = () => {
     setCandidateData((prev) => {
@@ -114,7 +131,7 @@ const CandidateContact = ({
               items={["Select phone type", "Mobile", "Office", "House"]}
               label="Phone number"
               idName="type"
-              value={phone.type}
+              value={phone.type ?? ""}
               onChange={(e) => {
                 onChangeHandler_contactData_phone(e, index);
               }}
@@ -122,7 +139,7 @@ const CandidateContact = ({
             <InputField
               type="text"
               name="number"
-              value={phone.number} //// making the React state is the single value of truth
+              value={phone.number ?? ""}
               id="number"
               htmlFor="number"
               labelText=""
@@ -168,20 +185,26 @@ const CandidateContact = ({
             <List
               items={["Select network", "Facebook", "Twitter", "Youtube"]}
               label="Social"
-              idName="social"
+              idName="netName"
+              value={social.netName ?? ""}
+              onChange={(e) => {
+                onChangeHandler_contactData_social(e, index);
+              }}
             />
             <InputField
               type="text"
-              name="socialNetwork"
-              value={contactData.social.link} //// making the React state is the single value of truth
-              id="socialNetwork"
-              htmlFor="socialNetwork"
+              name="link"
+              value={social.link ?? ""}
+              id="link"
+              htmlFor="link"
               labelText=""
               placeHolder="Social Network link"
               className="app__candidate-profile-form__input"
               direction=""
               // labelClass="app__candidate-profile-form__input-label"
-              onChange={onChangeHandler}
+              onChange={(e) => {
+                onChangeHandler_contactData_social(e, index);
+              }}
             />
             {/* add/ delete icon */}
 
